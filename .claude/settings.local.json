@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app@latest . --typescript --tailwind --app --no-src-dir --import-alias \"@/*\" --turbopack --eslint)",
+      "Read(//e/Cursor Projekte/_Websites/**)",
+      "Bash(yes:*)",
+      "Bash(npx create-next-app@latest seniorenbetreuung-website --typescript --tailwind --app --no-src-dir --import-alias \"@/*\" --turbopack --eslint)",
+      "Bash(npm install)",
+      "Bash(git init:*)",
+      "Bash(git remote add:*)",
+      "Bash(git add:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
