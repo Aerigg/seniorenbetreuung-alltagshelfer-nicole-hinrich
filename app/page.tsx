@@ -6,13 +6,11 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <div className="min-h-screen bg-warm-beige">
-      {/* Hero Section */}
-      <section className="relative overflow-hidden min-h-screen flex items-center">
-        {/* Header/Navigation - Positioned absolutely over hero */}
-        <header className="absolute top-0 left-0 right-0 z-50 pt-4 px-4">
-          <nav className="container mx-auto max-w-7xl">
-            <div className="relative rounded-2xl px-4 sm:px-6 lg:px-8 py-4 shadow-2xl" style={{backgroundColor: 'rgba(255, 255, 255, 0.05)', backdropFilter: 'blur(20px)'}}>
-              <div className="flex items-center justify-between">
+      {/* Header/Navigation - Sticky */}
+      <header className="sticky top-0 z-50 pt-4 px-4">
+        <nav className="container mx-auto max-w-7xl">
+          <div className="relative rounded-2xl px-4 sm:px-6 lg:px-8 py-4 shadow-2xl" style={{backgroundColor: 'rgba(255, 255, 255, 0.05)', backdropFilter: 'blur(20px)'}}>
+            <div className="flex items-center justify-between">
                   <div className="flex items-center space-x-3">
                     <Image
                       src="/logo.png"
@@ -45,8 +43,12 @@ export default function Home() {
                   </Link>
                 </div>
             </div>
-          </nav>
-        </header>
+          </div>
+        </nav>
+      </header>
+
+      {/* Hero Section */}
+      <section className="relative overflow-hidden min-h-screen flex items-center">
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
@@ -65,7 +67,7 @@ export default function Home() {
             <div className="relative rounded-3xl p-8 sm:p-10 lg:p-12 shadow-2xl" style={{backgroundColor: 'rgba(255, 255, 255, 0.05)', backdropFilter: 'blur(20px)'}}>
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
                   Mit Herz und Zeit für{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 via-pink-400 via-orange-400 to-yellow-400">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-blue via-purple-500 via-pink-500 via-red-500 to-warm-orange">
                     Menschen
                   </span>
                 </h1>
