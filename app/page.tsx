@@ -10,7 +10,7 @@ export default function Home() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center">
+      <section className="relative min-h-screen flex items-center -mt-24 pt-24">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
