@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Heart, Home as HomeIcon, Baby, ShieldCheck } from "lucide-react";
+import ImageSlideshow from "@/components/ImageSlideshow";
 
 export default function Home() {
   return (
@@ -96,19 +97,14 @@ export default function Home() {
             </div>
 
             <div className="relative hidden lg:block">
-              <div className="relative w-full aspect-square max-w-lg mx-auto">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary-blue/20 to-warm-orange/20 rounded-3xl transform rotate-6"></div>
-                <div className="relative bg-white rounded-3xl shadow-2xl p-8 flex items-center justify-center">
-                  <Image
-                    src="/logo.png"
-                    alt="Nicole Hinrich"
-                    width={400}
-                    height={400}
-                    className="w-full h-auto"
-                    priority
-                  />
-                </div>
-              </div>
+              <ImageSlideshow
+                images={[
+                  "/logo.png",
+                  "/general/anton-SnKfmC1I9fU-unsplash.jpg",
+                  "/general/cdc-bsT-u4nBe7o-unsplash.jpg"
+                ]}
+                interval={4000}
+              />
             </div>
           </div>
         </div>
@@ -163,6 +159,243 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Detailed Services Section */}
+      <section id="leistungen" className="py-20 bg-gradient-to-b from-warm-beige to-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
+              Unsere Leistungen im Detail
+            </h2>
+            <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
+              Von der liebevollen Seniorenbetreuung bis zur zuverlässigen Kinderbetreuung –
+              wir sind für Sie da
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-primary-blue/10 hover:border-primary-blue/30 transition-all">
+              <div className="flex items-center gap-3 mb-4">
+                <Heart className="w-8 h-8 text-warm-orange" strokeWidth={1.5} />
+                <h3 className="text-2xl font-semibold text-foreground">Seniorenbetreuung</h3>
+              </div>
+              <p className="text-foreground/70 mb-4">
+                Individuelle Betreuung und Begleitung im Alltag. Wir unterstützen bei alltäglichen
+                Aufgaben und schaffen Momente der Freude.
+              </p>
+              <Link
+                href="/leistungen#seniorenbetreuung"
+                className="text-primary-blue hover:text-primary-blue/80 font-medium inline-flex items-center gap-2"
+              >
+                Mehr erfahren →
+              </Link>
+            </div>
+
+            <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-primary-blue/10 hover:border-primary-blue/30 transition-all">
+              <div className="flex items-center gap-3 mb-4">
+                <HomeIcon className="w-8 h-8 text-warm-orange" strokeWidth={1.5} />
+                <h3 className="text-2xl font-semibold text-foreground">Hauswirtschaft</h3>
+              </div>
+              <p className="text-foreground/70 mb-4">
+                Professionelle Unterstützung im Haushalt – von der Reinigung bis zur
+                Wäschepflege. Damit Sie sich auf das Wesentliche konzentrieren können.
+              </p>
+              <Link
+                href="/leistungen#hauswirtschaft"
+                className="text-primary-blue hover:text-primary-blue/80 font-medium inline-flex items-center gap-2"
+              >
+                Mehr erfahren →
+              </Link>
+            </div>
+
+            <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-primary-blue/10 hover:border-primary-blue/30 transition-all">
+              <div className="flex items-center gap-3 mb-4">
+                <Baby className="w-8 h-8 text-warm-orange" strokeWidth={1.5} />
+                <h3 className="text-2xl font-semibold text-foreground">Kinderbetreuung</h3>
+              </div>
+              <p className="text-foreground/70 mb-4">
+                Liebevolle und qualifizierte Betreuung für Kinder und Jugendliche.
+                Mit pädagogischem Ansatz und viel Herz.
+              </p>
+              <Link
+                href="/leistungen#kinderbetreuung"
+                className="text-primary-blue hover:text-primary-blue/80 font-medium inline-flex items-center gap-2"
+              >
+                Mehr erfahren →
+              </Link>
+            </div>
+
+            <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-primary-blue/10 hover:border-primary-blue/30 transition-all">
+              <div className="flex items-center gap-3 mb-4">
+                <ShieldCheck className="w-8 h-8 text-warm-orange" strokeWidth={1.5} />
+                <h3 className="text-2xl font-semibold text-foreground">Abrechnung über Pflegekasse</h3>
+              </div>
+              <p className="text-foreground/70 mb-4">
+                Als LAGuS-anerkannter Anbieter können wir direkt mit den Pflegekassen abrechnen.
+                Keine komplizierte Bürokratie für Sie.
+              </p>
+              <Link
+                href="/leistungen#pflegekasse"
+                className="text-primary-blue hover:text-primary-blue/80 font-medium inline-flex items-center gap-2"
+              >
+                Mehr erfahren →
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section id="ueber-mich" className="py-20 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+            <div className="order-2 lg:order-1">
+              <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
+                Über mich – Nicole Hinrich
+              </h2>
+              <p className="text-lg text-foreground/70 mb-4">
+                Mein Name ist Nicole Hinrich und ich bin Ihre Alltagshelferin in Rostock.
+                Mit Herz, Erfahrung und LAGuS-Anerkennung biete ich professionelle Betreuung
+                und Unterstützung für die ganze Familie.
+              </p>
+              <p className="text-lg text-foreground/70 mb-6">
+                Ob Seniorenbetreuung, Hilfe im Haushalt oder Kinderbetreuung – ich bin mit
+                Leidenschaft und Engagement für Sie da. Persönlich, zuverlässig und mit viel
+                Zeit für das Wichtigste: den Menschen.
+              </p>
+              <Link
+                href="/ueber-mich"
+                className="bg-primary-blue hover:bg-primary-blue/90 text-white px-6 py-3 rounded-full font-semibold inline-flex items-center gap-2 shadow-lg hover:shadow-xl transition-all"
+              >
+                Mehr über mich erfahren →
+              </Link>
+            </div>
+            <div className="order-1 lg:order-2">
+              <div className="relative w-full aspect-square max-w-md mx-auto">
+                <div className="absolute inset-0 bg-gradient-to-br from-warm-orange/20 to-primary-blue/20 rounded-3xl transform -rotate-6"></div>
+                <div className="relative bg-white rounded-3xl shadow-xl overflow-hidden">
+                  <Image
+                    src="/logo.png"
+                    alt="Nicole Hinrich"
+                    width={500}
+                    height={500}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="kontakt" className="py-20 bg-gradient-to-b from-warm-beige to-light-blue">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
+              Kontaktieren Sie mich
+            </h2>
+            <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
+              Haben Sie Fragen oder möchten Sie ein unverbindliches Erstgespräch vereinbaren?
+              Ich freue mich auf Ihre Nachricht!
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div className="bg-white rounded-2xl p-8 shadow-lg">
+              <h3 className="text-2xl font-semibold text-foreground mb-6">Kontaktdaten</h3>
+              <div className="space-y-4">
+                <div>
+                  <p className="text-foreground/70 text-sm mb-1">Telefon</p>
+                  <a
+                    href="tel:015259229075"
+                    className="text-lg font-medium text-primary-blue hover:text-primary-blue/80"
+                  >
+                    0152 / 59229075
+                  </a>
+                </div>
+                <div>
+                  <p className="text-foreground/70 text-sm mb-1">E-Mail</p>
+                  <a
+                    href="mailto:info@seniorenbetreuung-hinrich.de"
+                    className="text-lg font-medium text-primary-blue hover:text-primary-blue/80"
+                  >
+                    info@seniorenbetreuung-hinrich.de
+                  </a>
+                </div>
+                <div>
+                  <p className="text-foreground/70 text-sm mb-1">Standort</p>
+                  <p className="text-lg font-medium text-foreground">Rostock, Deutschland</p>
+                </div>
+              </div>
+              <Link
+                href="/kontakt"
+                className="mt-6 inline-block bg-warm-orange hover:bg-warm-orange/90 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:shadow-lg transition-all"
+              >
+                Zum Kontaktformular →
+              </Link>
+            </div>
+
+            <div className="bg-white rounded-2xl p-8 shadow-lg">
+              <h3 className="text-2xl font-semibold text-foreground mb-6">Öffnungszeiten</h3>
+              <div className="space-y-3">
+                <div className="flex justify-between">
+                  <span className="text-foreground/70">Montag - Freitag</span>
+                  <span className="font-medium text-foreground">8:00 - 18:00 Uhr</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-foreground/70">Samstag</span>
+                  <span className="font-medium text-foreground">Nach Vereinbarung</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-foreground/70">Sonntag</span>
+                  <span className="font-medium text-foreground">Nach Vereinbarung</span>
+                </div>
+              </div>
+              <div className="mt-6 p-4 bg-light-blue rounded-xl">
+                <p className="text-sm text-foreground/70">
+                  Termine außerhalb der Öffnungszeiten sind nach Absprache möglich.
+                  Rufen Sie mich gerne an!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-foreground text-white py-12">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-3 gap-8 mb-8">
+            <div>
+              <h4 className="font-semibold text-lg mb-4">Seniorenbetreuung Hinrich</h4>
+              <p className="text-white/70 text-sm">
+                Ihre Alltagshelferin in Rostock – Mit Herz und Zeit für Menschen
+              </p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-lg mb-4">Navigation</h4>
+              <ul className="space-y-2 text-sm">
+                <li><Link href="/" className="text-white/70 hover:text-white">Startseite</Link></li>
+                <li><Link href="/leistungen" className="text-white/70 hover:text-white">Leistungen</Link></li>
+                <li><Link href="/ueber-mich" className="text-white/70 hover:text-white">Über mich</Link></li>
+                <li><Link href="/kontakt" className="text-white/70 hover:text-white">Kontakt</Link></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-semibold text-lg mb-4">Kontakt</h4>
+              <ul className="space-y-2 text-sm text-white/70">
+                <li>Tel: 0152 / 59229075</li>
+                <li>info@seniorenbetreuung-hinrich.de</li>
+                <li>Rostock, Deutschland</li>
+              </ul>
+            </div>
+          </div>
+          <div className="border-t border-white/10 pt-8 text-center text-sm text-white/50">
+            <p>&copy; 2025 Seniorenbetreuung Alltagshelfer Nicole Hinrich. Alle Rechte vorbehalten.</p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
