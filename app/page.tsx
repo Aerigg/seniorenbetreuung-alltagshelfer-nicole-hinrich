@@ -11,7 +11,7 @@ export default function Home() {
         {/* Header/Navigation - Positioned absolutely over hero */}
         <header className="absolute top-0 left-0 right-0 z-50 pt-4 px-4">
           <nav className="container mx-auto max-w-7xl">
-            <div className="relative rounded-2xl px-4 sm:px-6 lg:px-8 py-4 shadow-2xl" style={{backgroundColor: 'rgba(255, 255, 255, 0.1)', backdropFilter: 'blur(20px)'}}>
+            <div className="relative rounded-2xl px-4 sm:px-6 lg:px-8 py-4 shadow-2xl" style={{backgroundColor: 'rgba(255, 255, 255, 0.05)', backdropFilter: 'blur(20px)'}}>
               <div className="flex items-center justify-between">
                   <div className="flex items-center space-x-3">
                     <Image
@@ -62,10 +62,10 @@ export default function Home() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-32 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Text Content with Frosted Glass Effect */}
-            <div className="relative rounded-3xl p-8 sm:p-10 lg:p-12 shadow-2xl" style={{backgroundColor: 'rgba(255, 255, 255, 0.1)', backdropFilter: 'blur(20px)'}}>
+            <div className="relative rounded-3xl p-8 sm:p-10 lg:p-12 shadow-2xl" style={{backgroundColor: 'rgba(255, 255, 255, 0.05)', backdropFilter: 'blur(20px)'}}>
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
                   Mit Herz und Zeit für{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-orange-200">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 via-pink-400 via-orange-400 to-yellow-400">
                     Menschen
                   </span>
                 </h1>
@@ -109,7 +109,7 @@ export default function Home() {
             <div className="relative hidden lg:block">
               <div className="relative w-full aspect-square max-w-md mx-auto">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary-blue/20 to-warm-orange/20 rounded-3xl transform rotate-6 blur-sm"></div>
-                <div className="relative rounded-3xl p-8 shadow-2xl flex items-center justify-center" style={{backgroundColor: 'rgba(255, 255, 255, 0.1)', backdropFilter: 'blur(20px)'}}>
+                <div className="relative rounded-3xl p-8 shadow-2xl flex items-center justify-center" style={{backgroundColor: 'rgba(255, 255, 255, 0.05)', backdropFilter: 'blur(20px)'}}>
                   <Image
                     src="/logo.png"
                     alt="Nicole Hinrich"
