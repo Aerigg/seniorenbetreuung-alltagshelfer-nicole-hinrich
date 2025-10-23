@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Heart, Home as HomeIcon, Baby, ShieldCheck } from "lucide-react";
-import ImageSlideshow from "@/components/ImageSlideshow";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -98,14 +97,19 @@ export default function Home() {
             </div>
 
             <div className="relative hidden lg:block">
-              <ImageSlideshow
-                images={[
-                  "/logo.png",
-                  "/general/anton-SnKfmC1I9fU-unsplash.jpg",
-                  "/general/cdc-bsT-u4nBe7o-unsplash.jpg"
-                ]}
-                interval={4000}
-              />
+              <div className="relative w-full aspect-square max-w-lg mx-auto">
+                <div className="absolute inset-0 bg-gradient-to-br from-primary-blue/20 to-warm-orange/20 rounded-3xl transform rotate-6"></div>
+                <div className="relative bg-white rounded-3xl shadow-2xl p-8 flex items-center justify-center">
+                  <Image
+                    src="/logo.png"
+                    alt="Nicole Hinrich"
+                    width={400}
+                    height={400}
+                    className="w-full h-auto"
+                    priority
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
