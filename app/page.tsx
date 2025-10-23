@@ -7,9 +7,9 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-warm-beige">
       {/* Header/Navigation - Sticky */}
-      <header className="sticky top-0 z-50 pt-4 px-4">
-        <nav className="container mx-auto max-w-7xl">
-          <div className="relative rounded-2xl px-4 sm:px-6 lg:px-8 py-4 shadow-2xl" style={{background: 'linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(168, 85, 247, 0.15), rgba(236, 72, 153, 0.15), rgba(251, 146, 60, 0.15))', backdropFilter: 'blur(20px)'}}>
+      <header className="sticky top-0 z-50 px-4">
+        <nav className="container mx-auto max-w-7xl py-4">
+          <div className="relative rounded-2xl px-4 sm:px-6 lg:px-8 py-4 shadow-2xl" style={{background: 'linear-gradient(135deg, rgba(59, 130, 246, 0.25), rgba(168, 85, 247, 0.25), rgba(236, 72, 153, 0.25), rgba(251, 146, 60, 0.25))', backdropFilter: 'blur(20px)'}}>
             <div className="flex items-center justify-between">
                   <div className="flex items-center space-x-3">
                     <Image
@@ -47,7 +47,7 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden h-screen flex items-center -mt-[88px] pt-[88px]">
+      <section className="relative overflow-hidden h-screen flex items-center -mt-[104px] pt-[104px]">
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
