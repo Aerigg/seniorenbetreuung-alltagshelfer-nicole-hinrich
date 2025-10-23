@@ -6,12 +6,10 @@ import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
-      <Navbar />
-
-      {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center">
-        {/* Background Image */}
+    <div className="relative min-h-screen">
+      {/* Hero Section - starts at top:0 */}
+      <section className="absolute inset-0 min-h-screen">
+        {/* Background Image - covers entire viewport */}
         <div className="absolute inset-0 z-0">
           <Image
             src="/services/seniorenbetreuung.jpg"
@@ -22,8 +20,14 @@ export default function Home() {
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/30 to-transparent"></div>
         </div>
+      </section>
 
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-32 relative z-10">
+      {/* Navbar floats on top */}
+      <Navbar />
+
+      {/* Content with top padding to clear navbar */}
+      <div className="relative z-10 min-h-screen flex items-center pt-24">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-32">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Text Content with Frosted Glass Effect */}
             <div className="relative rounded-3xl p-8 sm:p-10 lg:p-12 shadow-2xl" style={{background: 'linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(168, 85, 247, 0.1), rgba(236, 72, 153, 0.1), rgba(251, 146, 60, 0.1))', backdropFilter: 'blur(20px)'}}>
@@ -87,7 +91,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
       {/* Detailed Services Section */}
       <section id="leistungen" className="py-20 bg-white">
