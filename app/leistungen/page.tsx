@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Heart, Home as HomeIcon, Baby, ShieldCheck, Check } from "lucide-react";
+import Footer from "@/components/Footer";
 
 export default function Leistungen() {
   return (
@@ -319,39 +320,7 @@ export default function Leistungen() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-foreground text-white py-12">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-3 gap-8 mb-8">
-            <div>
-              <h4 className="font-semibold text-lg mb-4">Seniorenbetreuung Hinrich</h4>
-              <p className="text-white/70 text-sm">
-                Ihre Alltagshelferin in Rostock – Mit Herz und Zeit für Menschen
-              </p>
-            </div>
-            <div>
-              <h4 className="font-semibold text-lg mb-4">Navigation</h4>
-              <ul className="space-y-2 text-sm">
-                <li><Link href="/" className="text-white/70 hover:text-white">Startseite</Link></li>
-                <li><Link href="/leistungen" className="text-white/70 hover:text-white">Leistungen</Link></li>
-                <li><Link href="/ueber-mich" className="text-white/70 hover:text-white">Über mich</Link></li>
-                <li><Link href="/kontakt" className="text-white/70 hover:text-white">Kontakt</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold text-lg mb-4">Kontakt</h4>
-              <ul className="space-y-2 text-sm text-white/70">
-                <li>Tel: 0152 / 59229075</li>
-                <li>info@seniorenbetreuung-hinrich.de</li>
-                <li>Rostock, Deutschland</li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-white/10 pt-8 text-center text-sm text-white/50">
-            <p>&copy; 2025 Seniorenbetreuung Alltagshelfer Nicole Hinrich. Alle Rechte vorbehalten.</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

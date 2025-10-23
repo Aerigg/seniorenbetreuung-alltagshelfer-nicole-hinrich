@@ -28,14 +28,14 @@ export default function ImageSlideshow({ images, interval = 5000 }: ImageSlidesh
   }, [images.length, interval]);
 
   return (
-    <div className="relative w-full aspect-square max-w-lg mx-auto">
+    <div className="relative w-full aspect-square max-w-lg mx-auto pb-10">
       {/* Decorative background frame */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary-blue/20 to-warm-orange/20 rounded-3xl transform rotate-6"></div>
 
       {/* Main container */}
-      <div className="relative bg-white rounded-3xl shadow-2xl overflow-hidden">
+      <div className="relative bg-white rounded-3xl shadow-2xl overflow-hidden aspect-square">
         {/* Current Image */}
-        <div className="relative w-full h-full p-8">
+        <div className="absolute inset-0 p-8">
           <div className="relative w-full h-full">
             <Image
               src={images[currentIndex]}
@@ -68,7 +68,7 @@ export default function ImageSlideshow({ images, interval = 5000 }: ImageSlidesh
       </div>
 
       {/* Indicators */}
-      <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 flex gap-2">
+      <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 flex gap-2">
         {images.map((_, idx) => (
           <button
             key={idx}

@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Heart, Home as HomeIcon, Baby, ShieldCheck } from "lucide-react";
 import ImageSlideshow from "@/components/ImageSlideshow";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -110,136 +111,126 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Quick Info Section */}
-      <section className="py-12 bg-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              {
-                Icon: Heart,
-                title: "Seniorenbetreuung",
-                desc: "Liebevolle Betreuung im Alltag",
-                image: "/services/seniorenbetreuung.jpg"
-              },
-              {
-                Icon: HomeIcon,
-                title: "Hauswirtschaft",
-                desc: "Unterstützung im Haushalt",
-                image: "/services/hauswirtschaft.jpg"
-              },
-              {
-                Icon: Baby,
-                title: "Kinderbetreuung",
-                desc: "Für Kinder & Jugendliche",
-                image: "/services/kinderbetreuung.jpg"
-              },
-              {
-                Icon: ShieldCheck,
-                title: "Pflegekasse",
-                desc: "Direkte Abrechnung möglich",
-                image: "/services/pflegekasse.jpg"
-              },
-            ].map((item, idx) => (
-              <div key={idx} className="bg-soft-gray rounded-2xl p-6 text-center hover:shadow-lg transition-shadow border-2 border-primary-blue/20 overflow-hidden">
-                <div className="relative w-full h-32 mb-4 rounded-lg overflow-hidden">
-                  <Image
-                    src={item.image}
-                    alt={item.title}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div className="flex justify-center mb-3">
-                  <item.Icon className="w-10 h-10 text-primary-blue" strokeWidth={1.5} />
-                </div>
-                <h3 className="font-semibold text-lg text-foreground mb-2">{item.title}</h3>
-                <p className="text-foreground/70 text-sm">{item.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Detailed Services Section */}
-      <section id="leistungen" className="py-20 bg-gradient-to-b from-warm-beige to-white">
+      <section id="leistungen" className="py-20 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-              Unsere Leistungen im Detail
+              Meine Leistungen im Detail
             </h2>
             <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
               Von der liebevollen Seniorenbetreuung bis zur zuverlässigen Kinderbetreuung –
-              wir sind für Sie da
+              ich bin für Sie da
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-primary-blue/10 hover:border-primary-blue/30 transition-all">
-              <div className="flex items-center gap-3 mb-4">
-                <Heart className="w-8 h-8 text-warm-orange" strokeWidth={1.5} />
-                <h3 className="text-2xl font-semibold text-foreground">Seniorenbetreuung</h3>
+            <div className="bg-soft-gray rounded-2xl overflow-hidden shadow-lg border-2 border-primary-blue/20 hover:border-primary-blue/30 transition-all">
+              <div className="relative w-full h-48">
+                <Image
+                  src="/services/seniorenbetreuung.jpg"
+                  alt="Seniorenbetreuung"
+                  fill
+                  className="object-cover"
+                />
               </div>
-              <p className="text-foreground/70 mb-4">
-                Individuelle Betreuung und Begleitung im Alltag. Wir unterstützen bei alltäglichen
-                Aufgaben und schaffen Momente der Freude.
-              </p>
-              <Link
-                href="/leistungen#seniorenbetreuung"
-                className="text-primary-blue hover:text-primary-blue/80 font-medium inline-flex items-center gap-2"
-              >
-                Mehr erfahren →
-              </Link>
+              <div className="p-8">
+                <div className="flex items-center gap-3 mb-4">
+                  <Heart className="w-8 h-8 text-warm-orange" strokeWidth={1.5} />
+                  <h3 className="text-2xl font-semibold text-foreground">Seniorenbetreuung</h3>
+                </div>
+                <p className="text-foreground/70 mb-4">
+                  Individuelle Betreuung und Begleitung im Alltag. Ich unterstütze bei alltäglichen
+                  Aufgaben und schaffe Momente der Freude.
+                </p>
+                <Link
+                  href="/leistungen#seniorenbetreuung"
+                  className="text-primary-blue hover:text-primary-blue/80 font-medium inline-flex items-center gap-2"
+                >
+                  Mehr erfahren →
+                </Link>
+              </div>
             </div>
 
-            <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-primary-blue/10 hover:border-primary-blue/30 transition-all">
-              <div className="flex items-center gap-3 mb-4">
-                <HomeIcon className="w-8 h-8 text-warm-orange" strokeWidth={1.5} />
-                <h3 className="text-2xl font-semibold text-foreground">Hauswirtschaft</h3>
+            <div className="bg-soft-gray rounded-2xl overflow-hidden shadow-lg border-2 border-primary-blue/20 hover:border-primary-blue/30 transition-all">
+              <div className="relative w-full h-48">
+                <Image
+                  src="/services/hauswirtschaft.jpg"
+                  alt="Hauswirtschaft"
+                  fill
+                  className="object-cover"
+                />
               </div>
-              <p className="text-foreground/70 mb-4">
-                Professionelle Unterstützung im Haushalt – von der Reinigung bis zur
-                Wäschepflege. Damit Sie sich auf das Wesentliche konzentrieren können.
-              </p>
-              <Link
-                href="/leistungen#hauswirtschaft"
-                className="text-primary-blue hover:text-primary-blue/80 font-medium inline-flex items-center gap-2"
-              >
-                Mehr erfahren →
-              </Link>
+              <div className="p-8">
+                <div className="flex items-center gap-3 mb-4">
+                  <HomeIcon className="w-8 h-8 text-warm-orange" strokeWidth={1.5} />
+                  <h3 className="text-2xl font-semibold text-foreground">Hauswirtschaft</h3>
+                </div>
+                <p className="text-foreground/70 mb-4">
+                  Professionelle Unterstützung im Haushalt – von der Reinigung bis zur
+                  Wäschepflege. Damit Sie sich auf das Wesentliche konzentrieren können.
+                </p>
+                <Link
+                  href="/leistungen#hauswirtschaft"
+                  className="text-primary-blue hover:text-primary-blue/80 font-medium inline-flex items-center gap-2"
+                >
+                  Mehr erfahren →
+                </Link>
+              </div>
             </div>
 
-            <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-primary-blue/10 hover:border-primary-blue/30 transition-all">
-              <div className="flex items-center gap-3 mb-4">
-                <Baby className="w-8 h-8 text-warm-orange" strokeWidth={1.5} />
-                <h3 className="text-2xl font-semibold text-foreground">Kinderbetreuung</h3>
+            <div className="bg-soft-gray rounded-2xl overflow-hidden shadow-lg border-2 border-primary-blue/20 hover:border-primary-blue/30 transition-all">
+              <div className="relative w-full h-48">
+                <Image
+                  src="/services/kinderbetreuung.jpg"
+                  alt="Kinderbetreuung"
+                  fill
+                  className="object-cover"
+                />
               </div>
-              <p className="text-foreground/70 mb-4">
-                Liebevolle und qualifizierte Betreuung für Kinder und Jugendliche.
-                Mit pädagogischem Ansatz und viel Herz.
-              </p>
-              <Link
-                href="/leistungen#kinderbetreuung"
-                className="text-primary-blue hover:text-primary-blue/80 font-medium inline-flex items-center gap-2"
-              >
-                Mehr erfahren →
-              </Link>
+              <div className="p-8">
+                <div className="flex items-center gap-3 mb-4">
+                  <Baby className="w-8 h-8 text-warm-orange" strokeWidth={1.5} />
+                  <h3 className="text-2xl font-semibold text-foreground">Kinderbetreuung</h3>
+                </div>
+                <p className="text-foreground/70 mb-4">
+                  Liebevolle und qualifizierte Betreuung für Kinder und Jugendliche.
+                  Mit pädagogischem Ansatz und viel Herz.
+                </p>
+                <Link
+                  href="/leistungen#kinderbetreuung"
+                  className="text-primary-blue hover:text-primary-blue/80 font-medium inline-flex items-center gap-2"
+                >
+                  Mehr erfahren →
+                </Link>
+              </div>
             </div>
 
-            <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-primary-blue/10 hover:border-primary-blue/30 transition-all">
-              <div className="flex items-center gap-3 mb-4">
-                <ShieldCheck className="w-8 h-8 text-warm-orange" strokeWidth={1.5} />
-                <h3 className="text-2xl font-semibold text-foreground">Abrechnung über Pflegekasse</h3>
+            <div className="bg-soft-gray rounded-2xl overflow-hidden shadow-lg border-2 border-primary-blue/20 hover:border-primary-blue/30 transition-all">
+              <div className="relative w-full h-48">
+                <Image
+                  src="/services/pflegekasse.jpg"
+                  alt="Abrechnung über Pflegekasse"
+                  fill
+                  className="object-cover"
+                />
               </div>
-              <p className="text-foreground/70 mb-4">
-                Als LAGuS-anerkannter Anbieter können wir direkt mit den Pflegekassen abrechnen.
-                Keine komplizierte Bürokratie für Sie.
-              </p>
-              <Link
-                href="/leistungen#pflegekasse"
-                className="text-primary-blue hover:text-primary-blue/80 font-medium inline-flex items-center gap-2"
-              >
-                Mehr erfahren →
-              </Link>
+              <div className="p-8">
+                <div className="flex items-center gap-3 mb-4">
+                  <ShieldCheck className="w-8 h-8 text-warm-orange" strokeWidth={1.5} />
+                  <h3 className="text-2xl font-semibold text-foreground">Abrechnung über Pflegekasse</h3>
+                </div>
+                <p className="text-foreground/70 mb-4">
+                  Als LAGuS-anerkannter Anbieter kann ich direkt mit den Pflegekassen abrechnen.
+                  Keine komplizierte Bürokratie für Sie.
+                </p>
+                <Link
+                  href="/leistungen#pflegekasse"
+                  className="text-primary-blue hover:text-primary-blue/80 font-medium inline-flex items-center gap-2"
+                >
+                  Mehr erfahren →
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -363,39 +354,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-foreground text-white py-12">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-3 gap-8 mb-8">
-            <div>
-              <h4 className="font-semibold text-lg mb-4">Seniorenbetreuung Hinrich</h4>
-              <p className="text-white/70 text-sm">
-                Ihre Alltagshelferin in Rostock – Mit Herz und Zeit für Menschen
-              </p>
-            </div>
-            <div>
-              <h4 className="font-semibold text-lg mb-4">Navigation</h4>
-              <ul className="space-y-2 text-sm">
-                <li><Link href="/" className="text-white/70 hover:text-white">Startseite</Link></li>
-                <li><Link href="/leistungen" className="text-white/70 hover:text-white">Leistungen</Link></li>
-                <li><Link href="/ueber-mich" className="text-white/70 hover:text-white">Über mich</Link></li>
-                <li><Link href="/kontakt" className="text-white/70 hover:text-white">Kontakt</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold text-lg mb-4">Kontakt</h4>
-              <ul className="space-y-2 text-sm text-white/70">
-                <li>Tel: 0152 / 59229075</li>
-                <li>info@seniorenbetreuung-hinrich.de</li>
-                <li>Rostock, Deutschland</li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-white/10 pt-8 text-center text-sm text-white/50">
-            <p>&copy; 2025 Seniorenbetreuung Alltagshelfer Nicole Hinrich. Alle Rechte vorbehalten.</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
