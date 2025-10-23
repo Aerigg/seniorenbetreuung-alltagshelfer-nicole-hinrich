@@ -67,24 +67,29 @@ export default function UeberMich() {
           <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto mb-20">
             <div>
               <h2 className="text-3xl font-bold text-foreground mb-6">
-                Meine Geschichte
+                Über mich
               </h2>
               <div className="space-y-4 text-lg text-foreground/70">
                 <p>
-                  Mein Name ist Nicole Hinrich und ich bin seit vielen Jahren als Alltagshelferin
-                  in Rostock tätig. Was als berufliche Leidenschaft begann, ist heute meine Berufung
-                  geworden – Menschen in ihrem Alltag zu unterstützen und ihnen ein Stück Lebensqualität
-                  zurückzugeben.
+                  Ich bin Nicole Hinrich, geboren am 28. März 1992, und lebe an der wunderschönen
+                  Ostsee in Rostock. Mit viel Herzblut und Geduld begleite ich Menschen in ihrem
+                  Alltag – ob Senior, Kind oder Familie.
+                </p>
+                <p>
+                  Mir ist wichtig, dass jeder Tag ein Stück leichter und schöner wird. Ich nehme mir
+                  Zeit für die kleinen Dinge, die oft vergessen werden: ein offenes Ohr, ein herzliches
+                  Lächeln und die Gewissheit, dass jemand da ist, wenn man Unterstützung braucht.
+                </p>
+                <p>
+                  Meine Arbeit ist mehr als nur ein Beruf – es ist eine Berufung. Ich liebe es,
+                  Menschen zu begleiten, ihnen zur Seite zu stehen und gemeinsam schöne Momente zu
+                  schaffen. Ob beim Spaziergang an der Ostsee, beim gemeinsamen Kochen oder einfach
+                  nur beim Zuhören.
                 </p>
                 <p>
                   Mit meiner LAGuS-Anerkennung biete ich professionelle Betreuung und Unterstützung
                   für Senioren, Familien und Kinder. Jeder Mensch ist einzigartig, und so ist es auch
                   meine Betreuung – individuell, herzlich und auf Ihre Bedürfnisse zugeschnitten.
-                </p>
-                <p>
-                  Was mich auszeichnet? Ich nehme mir Zeit. Zeit zum Zuhören, Zeit zum Verstehen und
-                  Zeit, um wirklich für Sie da zu sein. Denn nur so kann ich Sie bestmöglich
-                  unterstützen.
                 </p>
               </div>
             </div>
