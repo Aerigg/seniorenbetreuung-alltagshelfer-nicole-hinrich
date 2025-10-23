@@ -42,7 +42,6 @@ export default function Home() {
                     Jetzt anfragen
                   </Link>
                 </div>
-            </div>
           </div>
         </nav>
       </header>
