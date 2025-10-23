@@ -1,50 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 
 export default function Impressum() {
   return (
     <div className="min-h-screen bg-warm-beige">
-      {/* Header/Navigation */}
-      <header className="bg-white/90 backdrop-blur-sm shadow-sm sticky top-0 z-50">
-        <nav className="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <div className="flex items-center justify-between">
-            <Link href="/" className="flex items-center space-x-3">
-              <Image
-                src="/logo.png"
-                alt="Seniorenbetreuung Alltagshelfer Nicole Hinrich Logo"
-                width={60}
-                height={60}
-                className="w-12 h-12 sm:w-14 sm:h-14"
-              />
-              <div className="hidden sm:block">
-                <h2 className="text-primary-blue font-semibold text-lg">Seniorenbetreuung</h2>
-                <p className="text-warm-orange text-sm">Alltagshelfer Nicole Hinrich</p>
-              </div>
-            </Link>
-            <div className="hidden md:flex space-x-6 lg:space-x-8">
-              <Link href="/" className="text-foreground hover:text-primary-blue transition-colors font-medium">
-                Startseite
-              </Link>
-              <Link href="/leistungen" className="text-foreground hover:text-primary-blue transition-colors font-medium">
-                Leistungen
-              </Link>
-              <Link href="/ueber-mich" className="text-foreground hover:text-primary-blue transition-colors font-medium">
-                Über mich
-              </Link>
-              <Link href="/kontakt" className="text-foreground hover:text-primary-blue transition-colors font-medium">
-                Kontakt
-              </Link>
-            </div>
-            <Link
-              href="/kontakt"
-              className="bg-warm-orange hover:bg-warm-orange/90 text-white px-4 sm:px-6 py-2 rounded-full font-medium transition-all shadow-md hover:shadow-lg"
-            >
-              Jetzt anfragen
-            </Link>
-          </div>
-        </nav>
-      </header>
+      <Navbar />
 
       {/* Content */}
       <section className="py-16 sm:py-24">
