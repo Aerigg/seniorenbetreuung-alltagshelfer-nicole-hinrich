@@ -7,39 +7,46 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-warm-beige">
       {/* Header/Navigation */}
-      <header className="bg-white/90 backdrop-blur-sm shadow-sm sticky top-0 z-50">
-        <nav className="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-3">
-              <Image
-                src="/logo.png"
-                alt="Seniorenbetreuung Alltagshelfer Nicole Hinrich Logo"
-                width={60}
-                height={60}
-                className="w-12 h-12 sm:w-14 sm:h-14"
-              />
-              <div className="hidden sm:block">
-                <h2 className="text-primary-blue font-semibold text-lg">Seniorenbetreuung</h2>
-                <p className="text-warm-orange text-sm">Alltagshelfer Nicole Hinrich</p>
+      <header className="sticky top-0 z-50 pt-4 px-4">
+        <nav className="container mx-auto max-w-7xl bg-slate-800/80 backdrop-blur-xl rounded-2xl shadow-2xl relative overflow-hidden">
+          {/* Gradient Border */}
+          <div className="absolute inset-0 rounded-2xl p-[2px] bg-gradient-to-r from-primary-blue via-purple-500 via-pink-500 via-red-500 to-warm-orange">
+            <div className="h-full w-full bg-slate-800/80 backdrop-blur-xl rounded-2xl"></div>
+          </div>
+
+          <div className="relative px-4 sm:px-6 lg:px-8 py-4">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center space-x-3">
+                <Image
+                  src="/logo.png"
+                  alt="Seniorenbetreuung Alltagshelfer Nicole Hinrich Logo"
+                  width={60}
+                  height={60}
+                  className="w-12 h-12 sm:w-14 sm:h-14"
+                />
+                <div className="hidden sm:block">
+                  <h2 className="text-white font-semibold text-lg">Seniorenbetreuung</h2>
+                  <p className="text-warm-orange text-sm">Alltagshelfer Nicole Hinrich</p>
+                </div>
               </div>
+              <div className="hidden md:flex space-x-6 lg:space-x-8">
+                <Link href="#leistungen" className="text-white/90 hover:text-white transition-colors font-medium">
+                  Leistungen
+                </Link>
+                <Link href="#ueber-mich" className="text-white/90 hover:text-white transition-colors font-medium">
+                  Über mich
+                </Link>
+                <Link href="#kontakt" className="text-white/90 hover:text-white transition-colors font-medium">
+                  Kontakt
+                </Link>
+              </div>
+              <Link
+                href="#kontakt"
+                className="bg-warm-orange hover:bg-warm-orange/90 text-white px-4 sm:px-6 py-2 rounded-full font-medium transition-all shadow-md hover:shadow-lg"
+              >
+                Jetzt anfragen
+              </Link>
             </div>
-            <div className="hidden md:flex space-x-6 lg:space-x-8">
-              <Link href="#leistungen" className="text-foreground hover:text-primary-blue transition-colors font-medium">
-                Leistungen
-              </Link>
-              <Link href="#ueber-mich" className="text-foreground hover:text-primary-blue transition-colors font-medium">
-                Über mich
-              </Link>
-              <Link href="#kontakt" className="text-foreground hover:text-primary-blue transition-colors font-medium">
-                Kontakt
-              </Link>
-            </div>
-            <Link
-              href="#kontakt"
-              className="bg-warm-orange hover:bg-warm-orange/90 text-white px-4 sm:px-6 py-2 rounded-full font-medium transition-all shadow-md hover:shadow-lg"
-            >
-              Jetzt anfragen
-            </Link>
           </div>
         </nav>
       </header>
@@ -61,45 +68,48 @@ export default function Home() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-32 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Text Content with Frosted Glass Effect */}
-            <div className="bg-white/90 backdrop-blur-md rounded-3xl p-8 sm:p-10 lg:p-12 shadow-2xl border border-white/20">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
-                Mit Herz und Zeit für{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-blue to-warm-orange">
-                  Menschen
-                </span>
-              </h1>
-              <p className="text-lg sm:text-xl text-foreground/80 mb-8 leading-relaxed">
-                Ihre Alltagshelferin in Rostock – Professionelle Seniorenbetreuung,
-                Hauswirtschaftliche Hilfe und Kinderbetreuung mit Anerkennung vom LAGuS
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link
-                  href="#leistungen"
-                  className="bg-primary-blue hover:bg-primary-blue/90 text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all text-center"
-                >
-                  Meine Leistungen
-                </Link>
-                <Link
-                  href="tel:015259229075"
-                  className="bg-warm-orange hover:bg-warm-orange/90 text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all text-center"
-                >
-                  0152 / 59229075
-                </Link>
-              </div>
+            <div className="relative overflow-hidden rounded-3xl shadow-2xl">
+              <div className="absolute inset-0 bg-white/10 backdrop-blur-xl"></div>
+              <div className="relative p-8 sm:p-10 lg:p-12 bg-white/20 backdrop-blur-xl border border-white/30">
+                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
+                  Mit Herz und Zeit für{" "}
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-orange-300">
+                    Menschen
+                  </span>
+                </h1>
+                <p className="text-lg sm:text-xl text-white/95 mb-8 leading-relaxed drop-shadow">
+                  Ihre Alltagshelferin in Rostock – Professionelle Seniorenbetreuung,
+                  Hauswirtschaftliche Hilfe und Kinderbetreuung mit Anerkennung vom LAGuS
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Link
+                    href="#leistungen"
+                    className="bg-primary-blue hover:bg-primary-blue/90 text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all text-center"
+                  >
+                    Meine Leistungen
+                  </Link>
+                  <Link
+                    href="tel:015259229075"
+                    className="bg-warm-orange hover:bg-warm-orange/90 text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all text-center"
+                  >
+                    0152 / 59229075
+                  </Link>
+                </div>
 
-              {/* Trust Indicators */}
-              <div className="mt-8 flex flex-wrap gap-4 text-sm">
-                <div className="flex items-center gap-2 bg-white/50 backdrop-blur-sm px-3 py-2 rounded-full">
-                  <div className="w-3 h-3 bg-warm-orange rounded-full"></div>
-                  <span className="text-foreground/80 font-medium">LAGuS anerkannt</span>
-                </div>
-                <div className="flex items-center gap-2 bg-white/50 backdrop-blur-sm px-3 py-2 rounded-full">
-                  <div className="w-3 h-3 bg-primary-blue rounded-full"></div>
-                  <span className="text-foreground/80 font-medium">Pflegekassen</span>
-                </div>
-                <div className="flex items-center gap-2 bg-white/50 backdrop-blur-sm px-3 py-2 rounded-full">
-                  <div className="w-3 h-3 bg-accent-yellow rounded-full"></div>
-                  <span className="text-foreground/80 font-medium">Persönlich & Herzlich</span>
+                {/* Trust Indicators */}
+                <div className="mt-8 flex flex-wrap gap-4 text-sm">
+                  <div className="flex items-center gap-2 bg-white/20 backdrop-blur-sm px-3 py-2 rounded-full border border-white/30">
+                    <div className="w-3 h-3 bg-warm-orange rounded-full"></div>
+                    <span className="text-white font-medium drop-shadow">LAGuS anerkannt</span>
+                  </div>
+                  <div className="flex items-center gap-2 bg-white/20 backdrop-blur-sm px-3 py-2 rounded-full border border-white/30">
+                    <div className="w-3 h-3 bg-blue-300 rounded-full"></div>
+                    <span className="text-white font-medium drop-shadow">Pflegekassen</span>
+                  </div>
+                  <div className="flex items-center gap-2 bg-white/20 backdrop-blur-sm px-3 py-2 rounded-full border border-white/30">
+                    <div className="w-3 h-3 bg-yellow-300 rounded-full"></div>
+                    <span className="text-white font-medium drop-shadow">Persönlich & Herzlich</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -107,16 +117,19 @@ export default function Home() {
             {/* Logo with Frosted Glass Effect */}
             <div className="relative hidden lg:block">
               <div className="relative w-full aspect-square max-w-md mx-auto">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary-blue/20 to-warm-orange/20 rounded-3xl transform rotate-6"></div>
-                <div className="relative bg-white/90 backdrop-blur-md rounded-3xl shadow-2xl p-8 flex items-center justify-center border border-white/20">
-                  <Image
-                    src="/logo.png"
-                    alt="Nicole Hinrich"
-                    width={400}
-                    height={400}
-                    className="w-full h-auto"
-                    priority
-                  />
+                <div className="absolute inset-0 bg-gradient-to-br from-primary-blue/30 to-warm-orange/30 rounded-3xl transform rotate-6 blur-sm"></div>
+                <div className="relative overflow-hidden rounded-3xl shadow-2xl">
+                  <div className="absolute inset-0 bg-white/10 backdrop-blur-xl"></div>
+                  <div className="relative p-8 bg-white/20 backdrop-blur-xl border border-white/30 flex items-center justify-center">
+                    <Image
+                      src="/logo.png"
+                      alt="Nicole Hinrich"
+                      width={400}
+                      height={400}
+                      className="w-full h-auto drop-shadow-2xl"
+                      priority
+                    />
+                  </div>
                 </div>
               </div>
             </div>
