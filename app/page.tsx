@@ -10,13 +10,8 @@ export default function Home() {
       <section className="relative overflow-hidden min-h-screen flex items-center">
         {/* Header/Navigation - Positioned absolutely over hero */}
         <header className="absolute top-0 left-0 right-0 z-50 pt-4 px-4">
-          <nav className="container mx-auto max-w-7xl rounded-2xl shadow-2xl relative overflow-hidden">
-            {/* Gradient Border */}
-            <div className="absolute inset-0 rounded-2xl p-[2px] bg-gradient-to-r from-primary-blue via-purple-500 via-pink-500 via-red-500 to-warm-orange">
-              <div className="h-full w-full bg-white/5 backdrop-blur-2xl rounded-2xl"></div>
-            </div>
-
-            <div className="relative px-4 sm:px-6 lg:px-8 py-4">
+          <nav className="container mx-auto max-w-7xl rounded-2xl p-[3px] bg-gradient-to-r from-primary-blue via-purple-500 via-pink-500 via-red-500 to-warm-orange shadow-2xl">
+            <div className="bg-white/10 backdrop-blur-2xl rounded-2xl px-4 sm:px-6 lg:px-8 py-4">
               <div className="flex items-center justify-between">
                 <div className="flex items-center space-x-3">
                   <Image
@@ -67,13 +62,8 @@ export default function Home() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-32 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Text Content with Frosted Glass Effect */}
-            <div className="relative overflow-hidden rounded-3xl shadow-2xl">
-              {/* Gradient Border */}
-              <div className="absolute inset-0 rounded-3xl p-[2px] bg-gradient-to-r from-primary-blue via-purple-500 via-pink-500 via-red-500 to-warm-orange">
-                <div className="h-full w-full bg-white/5 backdrop-blur-3xl rounded-3xl"></div>
-              </div>
-
-              <div className="relative p-8 sm:p-10 lg:p-12">
+            <div className="relative rounded-3xl p-[3px] bg-gradient-to-r from-primary-blue via-purple-500 via-pink-500 via-red-500 to-warm-orange shadow-2xl">
+              <div className="bg-white/10 backdrop-blur-2xl rounded-3xl p-8 sm:p-10 lg:p-12">
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
                   Mit Herz und Zeit für{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-orange-200">
@@ -101,15 +91,15 @@ export default function Home() {
 
                 {/* Trust Indicators */}
                 <div className="mt-8 flex flex-wrap gap-4 text-sm">
-                  <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-3 py-2 rounded-full border border-white/20">
+                  <div className="flex items-center gap-2 bg-white/15 backdrop-blur-sm px-3 py-2 rounded-full">
                     <div className="w-3 h-3 bg-warm-orange rounded-full shadow-lg"></div>
                     <span className="text-white font-medium drop-shadow">LAGuS anerkannt</span>
                   </div>
-                  <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-3 py-2 rounded-full border border-white/20">
+                  <div className="flex items-center gap-2 bg-white/15 backdrop-blur-sm px-3 py-2 rounded-full">
                     <div className="w-3 h-3 bg-blue-300 rounded-full shadow-lg"></div>
                     <span className="text-white font-medium drop-shadow">Pflegekassen</span>
                   </div>
-                  <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-3 py-2 rounded-full border border-white/20">
+                  <div className="flex items-center gap-2 bg-white/15 backdrop-blur-sm px-3 py-2 rounded-full">
                     <div className="w-3 h-3 bg-yellow-300 rounded-full shadow-lg"></div>
                     <span className="text-white font-medium drop-shadow">Persönlich & Herzlich</span>
                   </div>
@@ -121,13 +111,8 @@ export default function Home() {
             <div className="relative hidden lg:block">
               <div className="relative w-full aspect-square max-w-md mx-auto">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary-blue/20 to-warm-orange/20 rounded-3xl transform rotate-6 blur-sm"></div>
-                <div className="relative overflow-hidden rounded-3xl shadow-2xl">
-                  {/* Gradient Border */}
-                  <div className="absolute inset-0 rounded-3xl p-[2px] bg-gradient-to-r from-primary-blue via-purple-500 via-pink-500 via-red-500 to-warm-orange">
-                    <div className="h-full w-full bg-white/5 backdrop-blur-3xl rounded-3xl"></div>
-                  </div>
-
-                  <div className="relative p-8 flex items-center justify-center">
+                <div className="relative rounded-3xl p-[3px] bg-gradient-to-r from-primary-blue via-purple-500 via-pink-500 via-red-500 to-warm-orange shadow-2xl">
+                  <div className="bg-white/10 backdrop-blur-2xl rounded-3xl p-8 flex items-center justify-center">
                     <Image
                       src="/logo.png"
                       alt="Nicole Hinrich"
