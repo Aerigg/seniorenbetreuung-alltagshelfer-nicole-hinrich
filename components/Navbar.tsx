@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Navbar() {
   return (
     <header className="sticky top-0 z-50">
-      <div className="container mx-auto max-w-7xl px-4 py-4">
+      <div className="container mx-auto max-w-7xl px-4 py-2">
         <div className="relative rounded-2xl px-4 sm:px-6 lg:px-8 py-4 shadow-2xl" style={{background: 'linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(168, 85, 247, 0.1), rgba(236, 72, 153, 0.1), rgba(251, 146, 60, 0.1))', backdropFilter: 'blur(20px)'}}>
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
