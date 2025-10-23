@@ -6,24 +6,22 @@ import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen">
-      {/* Background Image - Fixed full viewport */}
-      <div className="fixed inset-0 z-0">
-        <Image
-          src="/services/seniorenbetreuung.jpg"
-          alt="Seniorenbetreuung"
-          fill
-          className="object-cover"
-          priority
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/30 to-transparent"></div>
-      </div>
-
-      {/* Navbar */}
+    <div className="min-h-screen">
       <Navbar />
 
-      {/* Hero Section Content */}
-      <section className="relative z-10 min-h-screen flex items-center">
+      {/* Hero Section */}
+      <section className="relative min-h-screen flex items-center">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/services/seniorenbetreuung.jpg"
+            alt="Seniorenbetreuung"
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/30 to-transparent"></div>
+        </div>
 
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-32 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
