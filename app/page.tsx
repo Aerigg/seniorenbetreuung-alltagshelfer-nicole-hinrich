@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Heart, Home, Baby, ShieldCheck } from "lucide-react";
+import { Heart, Home as HomeIcon, Baby, ShieldCheck } from "lucide-react";
 
 export default function Home() {
   return (
@@ -126,7 +126,7 @@ export default function Home() {
                 image: "/services/seniorenbetreuung.jpg"
               },
               {
-                Icon: Home,
+                Icon: HomeIcon,
                 title: "Hauswirtschaft",
                 desc: "Unterstützung im Haushalt",
                 image: "/services/hauswirtschaft.jpg"
