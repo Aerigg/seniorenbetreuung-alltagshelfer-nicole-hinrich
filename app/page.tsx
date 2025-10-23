@@ -10,7 +10,7 @@ export default function Home() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden h-screen flex items-center -mt-[88px] pt-[88px]">
+      <section className="relative overflow-hidden h-screen flex items-center -mt-[72px] pt-[72px]">
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
@@ -26,7 +26,7 @@ export default function Home() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-32 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Text Content with Frosted Glass Effect */}
-            <div className="relative rounded-3xl p-8 sm:p-10 lg:p-12 shadow-2xl" style={{background: 'linear-gradient(135deg, rgba(59, 130, 246, 0.25), rgba(168, 85, 247, 0.25), rgba(236, 72, 153, 0.25), rgba(251, 146, 60, 0.25))', backdropFilter: 'blur(20px)'}}>
+            <div className="relative rounded-3xl p-8 sm:p-10 lg:p-12 shadow-2xl" style={{background: 'linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(168, 85, 247, 0.1), rgba(236, 72, 153, 0.1), rgba(251, 146, 60, 0.1))', backdropFilter: 'blur(20px)'}}>
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
                   Mit Herz und Zeit für{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-blue via-purple-500 via-pink-500 via-red-500 to-warm-orange">
@@ -73,7 +73,7 @@ export default function Home() {
             <div className="relative hidden lg:block">
               <div className="relative w-full aspect-square max-w-md mx-auto">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary-blue/20 to-warm-orange/20 rounded-3xl transform rotate-6 blur-sm"></div>
-                <div className="relative rounded-3xl p-8 shadow-2xl flex items-center justify-center" style={{background: 'linear-gradient(135deg, rgba(59, 130, 246, 0.25), rgba(168, 85, 247, 0.25), rgba(236, 72, 153, 0.25), rgba(251, 146, 60, 0.25))', backdropFilter: 'blur(20px)'}}>
+                <div className="relative rounded-3xl p-8 shadow-2xl flex items-center justify-center" style={{background: 'linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(168, 85, 247, 0.1), rgba(236, 72, 153, 0.1), rgba(251, 146, 60, 0.1))', backdropFilter: 'blur(20px)'}}>
                   <Image
                     src="/logo.png"
                     alt="Nicole Hinrich"
