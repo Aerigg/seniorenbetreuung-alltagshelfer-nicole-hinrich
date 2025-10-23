@@ -6,11 +6,11 @@ import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen overflow-x-hidden">
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden h-screen flex items-center -mt-[88px] pt-[88px]">
+      <section className="relative h-screen flex items-center -mt-[88px] pt-[88px]">
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
