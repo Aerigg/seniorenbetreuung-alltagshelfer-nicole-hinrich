@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Heart, Home, Baby, ShieldCheck } from "lucide-react";
 
 export default function Home() {
   return (
@@ -118,13 +119,43 @@ export default function Home() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { icon: "👵", title: "Seniorenbetreuung", desc: "Liebevolle Betreuung im Alltag" },
-              { icon: "🏠", title: "Hauswirtschaft", desc: "Unterstützung im Haushalt" },
-              { icon: "👶", title: "Kinderbetreuung", desc: "Für Kinder & Jugendliche" },
-              { icon: "💚", title: "Pflegekasse", desc: "Direkte Abrechnung möglich" },
+              {
+                Icon: Heart,
+                title: "Seniorenbetreuung",
+                desc: "Liebevolle Betreuung im Alltag",
+                image: "/services/seniorenbetreuung.jpg"
+              },
+              {
+                Icon: Home,
+                title: "Hauswirtschaft",
+                desc: "Unterstützung im Haushalt",
+                image: "/services/hauswirtschaft.jpg"
+              },
+              {
+                Icon: Baby,
+                title: "Kinderbetreuung",
+                desc: "Für Kinder & Jugendliche",
+                image: "/services/kinderbetreuung.jpg"
+              },
+              {
+                Icon: ShieldCheck,
+                title: "Pflegekasse",
+                desc: "Direkte Abrechnung möglich",
+                image: "/services/pflegekasse.jpg"
+              },
             ].map((item, idx) => (
-              <div key={idx} className="bg-soft-gray rounded-2xl p-6 text-center hover:shadow-lg transition-shadow">
-                <div className="text-4xl mb-3">{item.icon}</div>
+              <div key={idx} className="bg-soft-gray rounded-2xl p-6 text-center hover:shadow-lg transition-shadow border-2 border-primary-blue/20 overflow-hidden">
+                <div className="relative w-full h-32 mb-4 rounded-lg overflow-hidden">
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="flex justify-center mb-3">
+                  <item.Icon className="w-10 h-10 text-primary-blue" strokeWidth={1.5} />
+                </div>
                 <h3 className="font-semibold text-lg text-foreground mb-2">{item.title}</h3>
                 <p className="text-foreground/70 text-sm">{item.desc}</p>
               </div>
