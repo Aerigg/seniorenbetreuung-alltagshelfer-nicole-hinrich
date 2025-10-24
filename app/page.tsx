@@ -472,7 +472,7 @@ export default function Home() {
                   transition: { duration: 0.3 },
                 }}
               >
-                <h3 className="text-2xl font-semibold text-foreground mb-6">Öffnungszeiten</h3>
+                <h3 className="text-2xl font-semibold text-foreground mb-6">Erreichbarkeit</h3>
                 <div className="space-y-3">
                   <motion.div
                     className="flex justify-between"
@@ -508,7 +508,7 @@ export default function Home() {
                   transition={{ duration: 0.2 }}
                 >
                   <p className="text-sm text-foreground/70">
-                    Termine außerhalb der Öffnungszeiten sind nach Absprache möglich.
+                    Termine außerhalb dieser Zeiten sind nach Absprache möglich.
                     Rufen Sie mich gerne an!
                   </p>
                 </motion.div>
