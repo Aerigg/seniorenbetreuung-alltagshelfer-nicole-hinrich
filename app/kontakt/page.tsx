@@ -20,8 +20,8 @@ export default function Kontakt() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/general/hand-in-hand.jpg"
-            alt="Hand in Hand - Kontakt"
+            src="/general/wheelchair.jpg"
+            alt="Seniorenbetreuung - Fürsorge und Unterstützung"
             fill
             className="object-cover"
             priority
