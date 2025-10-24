@@ -28,6 +28,7 @@ export default function Navbar() {
       >
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4">
             <div className="flex items-center justify-between">
+              {/* Logo - visible on all devices */}
               <motion.div
                 className="flex items-center space-x-3"
                 whileHover={{ scale: 1.05 }}
@@ -52,6 +53,8 @@ export default function Navbar() {
                   </div>
                 </Link>
               </motion.div>
+
+              {/* Desktop Navigation - hidden on mobile */}
               <nav className="hidden md:flex space-x-3 lg:space-x-4">
                 {navLinks.map((link) => {
                   const isActive = pathname === link.href;
@@ -76,6 +79,8 @@ export default function Navbar() {
                   );
                 })}
               </nav>
+
+              {/* CTA Button - hidden on mobile */}
               <motion.div
                 className="hidden md:block"
                 whileHover={{ scale: 1.05 }}
@@ -93,14 +98,9 @@ export default function Navbar() {
         </div>
       </motion.header>
 
-      {/* Mobile Dock - iOS Style */}
-      <motion.nav
-        className="md:hidden fixed bottom-0 left-0 right-0 z-50 pb-safe"
-        initial={{ y: 100, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.5, ease: [0.25, 0.4, 0.25, 1], delay: 0.2 }}
-      >
-        <div className="mx-4 mb-4">
+      {/* Mobile Dock - iOS Style - Always visible at bottom */}
+      <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 pointer-events-none">
+        <div className="mx-4 mb-4 pointer-events-auto">
           <div
             className="rounded-3xl px-6 py-3 shadow-2xl"
             style={{
@@ -116,7 +116,6 @@ export default function Navbar() {
                 return (
                   <motion.div
                     key={link.href}
-                    whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
                     transition={{ duration: 0.2 }}
                   >
@@ -124,17 +123,15 @@ export default function Navbar() {
                       href={link.href}
                       className="flex flex-col items-center gap-1 min-w-[60px]"
                     >
-                      <motion.div
+                      <div
                         className={`p-2.5 rounded-2xl transition-all ${
                           isActive
                             ? "bg-warm-orange shadow-lg"
                             : "bg-primary-blue/80"
                         }`}
-                        animate={isActive ? { scale: [1, 1.1, 1] } : {}}
-                        transition={{ duration: 0.3 }}
                       >
                         <Icon className="w-5 h-5 text-white" strokeWidth={2.5} />
-                      </motion.div>
+                      </div>
                       <span className={`text-xs font-medium ${
                         isActive ? "text-warm-orange" : "text-white/80"
                       }`}>
@@ -147,10 +144,10 @@ export default function Navbar() {
             </div>
           </div>
         </div>
-      </motion.nav>
+      </div>
 
-      {/* Mobile Spacer */}
-      <div className="md:hidden h-24" />
+      {/* Mobile Bottom Spacer - prevents content from being hidden behind dock */}
+      <div className="md:hidden h-28" />
     </>
   );
 }
