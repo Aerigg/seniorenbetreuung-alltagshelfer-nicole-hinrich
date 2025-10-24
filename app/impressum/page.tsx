@@ -29,7 +29,7 @@ export default function Impressum() {
               <h2 className="text-2xl font-semibold text-foreground mb-4">Kontakt</h2>
               <p className="text-foreground/70">
                 Telefon: 0152 / 59229075<br />
-                E-Mail: info@seniorenbetreuung-hinrich.de
+                E-Mail: Seniorenbetreuung.alltagshelfer@gmail.com
               </p>
             </div>
 

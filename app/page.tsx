@@ -441,10 +441,10 @@ export default function Home() {
                   <motion.div whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
                     <p className="text-foreground/70 text-sm mb-1">E-Mail</p>
                     <a
-                      href="mailto:info@seniorenbetreuung-hinrich.de"
+                      href="mailto:Seniorenbetreuung.alltagshelfer@gmail.com"
                       className="text-lg font-medium text-primary-blue hover:text-primary-blue/80 transition-colors break-all"
                     >
-                      info@seniorenbetreuung-hinrich.de
+                      Seniorenbetreuung.alltagshelfer@gmail.com
                     </a>
                   </motion.div>
                   <div>

@@ -68,7 +68,7 @@ export default function Kontakt() {
             <Stagger staggerDelay={0.15} className="space-y-6 mb-12">
               {[
                 { icon: Phone, title: "Telefon", value: "0152 / 59229075", href: "tel:015259229075", subtitle: "Mo-Fr 8:00 - 18:00 Uhr" },
-                { icon: Mail, title: "E-Mail", value: "info@seniorenbetreuung-hinrich.de", href: "mailto:info@seniorenbetreuung-hinrich.de", subtitle: "Antwort innerhalb von 24 Stunden" },
+                { icon: Mail, title: "E-Mail", value: "Seniorenbetreuung.alltagshelfer@gmail.com", href: "mailto:Seniorenbetreuung.alltagshelfer@gmail.com", subtitle: "Antwort innerhalb von 24 Stunden" },
                 { icon: MapPin, title: "Standort", value: "Rostock, Deutschland", subtitle: "Hausbesuche im gesamten Stadtgebiet" }
               ].map((contact, idx) => (
                 <StaggerItem key={idx}>

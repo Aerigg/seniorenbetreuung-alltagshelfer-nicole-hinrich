@@ -34,7 +34,7 @@ export default function Footer() {
             <h4 className="font-semibold text-lg mb-4">Kontakt</h4>
             <ul className="space-y-2 text-sm text-white/70">
               <li>Tel: 0152 / 59229075</li>
-              <li>info@seniorenbetreuung-hinrich.de</li>
+              <li>Seniorenbetreuung.alltagshelfer@gmail.com</li>
               <li>Rostock, Deutschland</li>
             </ul>
           </div>
