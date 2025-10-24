@@ -38,7 +38,7 @@ export default function Leistungen() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              Unsere Leistungen
+              Meine Leistungen
             </motion.h1>
             <motion.p
               className="text-xl text-white/95 leading-relaxed drop-shadow"

@@ -119,7 +119,7 @@ export default function Kontakt() {
             >
               <div className="flex items-center gap-3 mb-4">
                 <Clock className="w-6 h-6 text-warm-orange" strokeWidth={1.5} />
-                <h3 className="text-xl font-semibold text-foreground">Öffnungszeiten</h3>
+                <h3 className="text-xl font-semibold text-foreground">Erreichbarkeit</h3>
               </div>
               <div className="space-y-2">
                 {[
