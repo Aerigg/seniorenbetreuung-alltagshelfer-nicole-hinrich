@@ -12,8 +12,14 @@ export default function AnimatedInput({ label, id, ...props }: AnimatedInputProp
   const [hasValue, setHasValue] = useState(false);
 
   return (
-    <div className="relative">
-      <motion.input
+    <motion.div
+      className="relative"
+      animate={{
+        scale: isFocused ? 1.01 : 1,
+      }}
+      transition={{ duration: 0.2 }}
+    >
+      <input
         {...props}
         id={id}
         onFocus={(e) => {
@@ -30,10 +36,6 @@ export default function AnimatedInput({ label, id, ...props }: AnimatedInputProp
             ? "border-primary-blue ring-2 ring-primary-blue/20"
             : "border-primary-blue/20"
         } ${props.className || ""}`}
-        animate={{
-          scale: isFocused ? 1.01 : 1,
-        }}
-        transition={{ duration: 0.2 }}
       />
       <motion.label
         htmlFor={id}
@@ -46,6 +48,6 @@ export default function AnimatedInput({ label, id, ...props }: AnimatedInputProp
       >
         {label}
       </motion.label>
-    </div>
+    </motion.div>
   );
 }
