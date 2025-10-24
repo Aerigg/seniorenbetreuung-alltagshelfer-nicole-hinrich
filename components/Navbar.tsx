@@ -18,6 +18,25 @@ export default function Navbar() {
 
   return (
     <>
+      {/* Mobile Header - Logo and Text only */}
+      <header className="md:hidden sticky top-0 z-50 bg-white shadow-sm">
+        <div className="container mx-auto px-4 py-3">
+          <Link href="/" className="flex items-center gap-3">
+            <Image
+              src="/logo.png"
+              alt="Seniorenbetreuung Alltagshelfer Nicole Hinrich Logo"
+              width={48}
+              height={48}
+              className="w-12 h-12"
+            />
+            <div>
+              <h2 className="text-foreground font-semibold text-base leading-tight">Seniorenbetreuung</h2>
+              <p className="text-warm-orange text-xs font-medium">Alltagshelfer Nicole Hinrich</p>
+            </div>
+          </Link>
+        </div>
+      </header>
+
       {/* Desktop Navbar - Hidden on mobile */}
       <motion.header
         className="hidden md:block sticky top-0 z-50"
