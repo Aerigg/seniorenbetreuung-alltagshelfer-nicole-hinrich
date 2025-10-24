@@ -21,7 +21,7 @@ export default function Home() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/services/seniorenbetreuung.jpg"
+            src="/general/wheelchair.jpg"
             alt="Seniorenbetreuung"
             fill
             className="object-cover"
