@@ -17,7 +17,7 @@ export default function UeberMich() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative py-32 sm:py-40 overflow-hidden">
+      <section className="relative pt-32 pb-20 sm:py-40 overflow-hidden md:pt-32">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image

@@ -18,8 +18,14 @@ export default function Navbar() {
 
   return (
     <>
-      {/* Mobile Header - Logo and Text only */}
-      <header className="md:hidden sticky top-0 z-50 bg-white shadow-sm">
+      {/* Mobile Header - Logo and Text only - Transparent overlay */}
+      <header
+        className="md:hidden fixed top-0 left-0 right-0 z-50"
+        style={{
+          background: 'linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(168, 85, 247, 0.15), rgba(236, 72, 153, 0.15), rgba(251, 146, 60, 0.15))',
+          backdropFilter: 'blur(20px)',
+        }}
+      >
         <div className="container mx-auto px-4 py-3">
           <Link href="/" className="flex items-center gap-3">
             <Image
@@ -30,8 +36,8 @@ export default function Navbar() {
               className="w-12 h-12"
             />
             <div>
-              <h2 className="text-foreground font-semibold text-base leading-tight">Seniorenbetreuung</h2>
-              <p className="text-warm-orange text-xs font-medium">Alltagshelfer Nicole Hinrich</p>
+              <h2 className="text-white font-semibold text-base leading-tight drop-shadow">Seniorenbetreuung</h2>
+              <p className="text-warm-orange text-xs font-medium drop-shadow">Alltagshelfer Nicole Hinrich</p>
             </div>
           </Link>
         </div>
