@@ -18,9 +18,9 @@ export default function Navbar() {
 
   return (
     <>
-      {/* Desktop Navbar */}
+      {/* Desktop Navbar - Hidden on mobile */}
       <motion.header
-        className="sticky top-0 z-50"
+        className="hidden md:block sticky top-0 z-50"
         style={{background: 'linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(168, 85, 247, 0.1), rgba(236, 72, 153, 0.1), rgba(251, 146, 60, 0.1))', backdropFilter: 'blur(20px)'}}
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
