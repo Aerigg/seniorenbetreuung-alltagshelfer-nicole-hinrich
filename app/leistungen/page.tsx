@@ -1,8 +1,15 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { Heart, Home as HomeIcon, Baby, ShieldCheck, Check } from "lucide-react";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import FadeIn from "@/components/animations/FadeIn";
+import ScaleIn from "@/components/animations/ScaleIn";
+import Stagger from "@/components/animations/Stagger";
+import StaggerItem from "@/components/animations/StaggerItem";
+import { motion } from "framer-motion";
 
 export default function Leistungen() {
   return (
@@ -12,15 +19,25 @@ export default function Leistungen() {
       {/* Hero Section */}
       <section className="py-16 sm:py-24 bg-gradient-to-br from-light-blue via-warm-beige to-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6">
+          <FadeIn direction="up" duration={0.8} className="text-center max-w-3xl mx-auto">
+            <motion.h1
+              className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            >
               Unsere Leistungen
-            </h1>
-            <p className="text-xl text-foreground/70 leading-relaxed">
+            </motion.h1>
+            <motion.p
+              className="text-xl text-foreground/70 leading-relaxed"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+            >
               Von der liebevollen Seniorenbetreuung bis zur zuverlässigen Kinderbetreuung –
               individuelle Unterstützung für jeden Bedarf
-            </p>
-          </div>
+            </motion.p>
+          </FadeIn>
         </div>
       </section>
 
@@ -28,52 +45,69 @@ export default function Leistungen() {
       <section id="seniorenbetreuung" className="py-20 bg-white scroll-mt-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <div className="flex items-center gap-3 mb-6">
-                <Heart className="w-10 h-10 text-warm-orange" strokeWidth={1.5} />
-                <h2 className="text-3xl sm:text-4xl font-bold text-foreground">
-                  Seniorenbetreuung
-                </h2>
+            <FadeIn direction="right" delay={0.2}>
+              <div>
+                <div className="flex items-center gap-3 mb-6">
+                  <motion.div
+                    animate={{ rotate: [0, 5, -5, 0] }}
+                    transition={{ duration: 2, repeat: Infinity, repeatDelay: 3 }}
+                  >
+                    <Heart className="w-10 h-10 text-warm-orange" strokeWidth={1.5} />
+                  </motion.div>
+                  <h2 className="text-3xl sm:text-4xl font-bold text-foreground">
+                    Seniorenbetreuung
+                  </h2>
+                </div>
+                <p className="text-lg text-foreground/70 mb-6">
+                  Mit Herz und Einfühlungsvermögen unterstütze ich Senioren in ihrem Alltag.
+                  Meine Betreuung ist individuell auf die Bedürfnisse jedes Einzelnen abgestimmt
+                  und schafft Lebensqualität und Freude.
+                </p>
+                <h3 className="text-xl font-semibold text-foreground mb-4">
+                  Meine Leistungen umfassen:
+                </h3>
+                <Stagger staggerDelay={0.1} className="space-y-3 mb-8">
+                  {[
+                    "Begleitung bei Spaziergängen und Ausflügen",
+                    "Unterstützung bei der Körperpflege",
+                    "Hilfe bei der Nahrungsaufnahme",
+                    "Gesellschaft und emotionale Unterstützung",
+                    "Gedächtnistraining und aktivierende Beschäftigung",
+                    "Begleitung zu Arztterminen",
+                    "Entlastung pflegender Angehöriger"
+                  ].map((item, idx) => (
+                    <StaggerItem key={idx}>
+                      <motion.li
+                        className="flex items-start gap-3"
+                        whileHover={{ x: 5 }}
+                        transition={{ duration: 0.2 }}
+                      >
+                        <Check className="w-5 h-5 text-warm-orange flex-shrink-0 mt-1" strokeWidth={2} />
+                        <span className="text-foreground/70">{item}</span>
+                      </motion.li>
+                    </StaggerItem>
+                  ))}
+                </Stagger>
+                <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                  <Link
+                    href="/kontakt"
+                    className="inline-block bg-primary-blue hover:bg-primary-blue/90 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all"
+                  >
+                    Jetzt Beratung anfragen
+                  </Link>
+                </motion.div>
               </div>
-              <p className="text-lg text-foreground/70 mb-6">
-                Mit Herz und Einfühlungsvermögen unterstütze ich Senioren in ihrem Alltag.
-                Meine Betreuung ist individuell auf die Bedürfnisse jedes Einzelnen abgestimmt
-                und schafft Lebensqualität und Freude.
-              </p>
-              <h3 className="text-xl font-semibold text-foreground mb-4">
-                Meine Leistungen umfassen:
-              </h3>
-              <ul className="space-y-3 mb-8">
-                {[
-                  "Begleitung bei Spaziergängen und Ausflügen",
-                  "Unterstützung bei der Körperpflege",
-                  "Hilfe bei der Nahrungsaufnahme",
-                  "Gesellschaft und emotionale Unterstützung",
-                  "Gedächtnistraining und aktivierende Beschäftigung",
-                  "Begleitung zu Arztterminen",
-                  "Entlastung pflegender Angehöriger"
-                ].map((item, idx) => (
-                  <li key={idx} className="flex items-start gap-3">
-                    <Check className="w-5 h-5 text-warm-orange flex-shrink-0 mt-1" strokeWidth={2} />
-                    <span className="text-foreground/70">{item}</span>
-                  </li>
-                ))}
-              </ul>
-              <Link
-                href="/kontakt"
-                className="inline-block bg-primary-blue hover:bg-primary-blue/90 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all"
-              >
-                Jetzt Beratung anfragen
-              </Link>
-            </div>
-            <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
-              <Image
-                src="/services/seniorenbetreuung.jpg"
-                alt="Seniorenbetreuung"
-                fill
-                className="object-cover"
-              />
-            </div>
+            </FadeIn>
+            <ScaleIn delay={0.3} className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
+              <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.3 }}>
+                <Image
+                  src="/services/seniorenbetreuung.jpg"
+                  alt="Seniorenbetreuung"
+                  fill
+                  className="object-cover"
+                />
+              </motion.div>
+            </ScaleIn>
           </div>
         </div>
       </section>
