@@ -10,6 +10,10 @@ import ScaleIn from "@/components/animations/ScaleIn";
 import Stagger from "@/components/animations/Stagger";
 import StaggerItem from "@/components/animations/StaggerItem";
 import { motion } from "framer-motion";
+import Testimonials from "@/components/sections/Testimonials";
+import TrustElements from "@/components/sections/TrustElements";
+import FAQ from "@/components/sections/FAQ";
+import { leistungenFAQ } from "@/data/faqData";
 
 export default function Leistungen() {
   return (
@@ -249,23 +253,27 @@ export default function Leistungen() {
             <h3 className="text-2xl font-semibold text-foreground mb-6">
               Ihre Vorteile
             </h3>
-            <ul className="space-y-4">
+            <ul className="space-y-4 mb-8">
               {[
                 {
                   title: "LAGuS-Anerkennung",
-                  desc: "Offizielle Anerkennung als Alltagshelferin durch das Landesamt für Gesundheit und Soziales"
+                  desc: "Offizielle Anerkennung als Alltagshelferin durch das Landesamt für Gesundheit und Soziales Mecklenburg-Vorpommern – damit sind meine Leistungen als Entlastungsleistungen anerkannt"
                 },
                 {
                   title: "Direkte Abrechnung",
-                  desc: "Keine Vorkasse nötig – ich rechne direkt mit Ihrer Pflegekasse ab"
+                  desc: "Keine Vorkasse nötig – ich rechne direkt mit Ihrer Pflegekasse ab. Sie erhalten von mir eine transparente Abrechnung"
                 },
                 {
                   title: "Entlastungsbetrag nutzen",
-                  desc: "Bis zu 125€ monatlich für anerkannte Entlastungsleistungen (ab Pflegegrad 1)"
+                  desc: "Bis zu 125€ monatlich für anerkannte Entlastungsleistungen (ab Pflegegrad 1). Nicht genutzte Beträge können Sie ansparen!"
                 },
                 {
                   title: "Keine Bürokratie für Sie",
-                  desc: "Ich übernehme die komplette Abwicklung mit der Pflegekasse"
+                  desc: "Ich übernehme die komplette Abwicklung mit der Pflegekasse – von der Beantragung bis zur Abrechnung"
+                },
+                {
+                  title: "Qualität & Transparenz",
+                  desc: "Regelmäßige Fortbildungen und Qualitätskontrollen gemäß den Vorgaben des LAGuS garantieren hohe Standards"
                 }
               ].map((item, idx) => (
                 <li key={idx} className="flex items-start gap-4">
@@ -277,6 +285,29 @@ export default function Leistungen() {
                 </li>
               ))}
             </ul>
+
+            <div className="bg-light-blue rounded-xl p-6">
+              <h4 className="font-semibold text-foreground mb-3">Welche Leistungen werden übernommen?</h4>
+              <div className="grid sm:grid-cols-2 gap-4 text-sm">
+                <div>
+                  <p className="font-medium text-foreground mb-2">✓ Über Entlastungsbetrag:</p>
+                  <ul className="text-foreground/70 space-y-1 ml-4">
+                    <li>• Seniorenbetreuung</li>
+                    <li>• Hauswirtschaftliche Hilfe</li>
+                    <li>• Begleitung im Alltag</li>
+                    <li>• Gesellschaft & Aktivierung</li>
+                  </ul>
+                </div>
+                <div>
+                  <p className="font-medium text-foreground mb-2">○ Privat:</p>
+                  <ul className="text-foreground/70 space-y-1 ml-4">
+                    <li>• Kinderbetreuung</li>
+                    <li>• Zusätzliche Stunden</li>
+                    <li>• Individuelle Angebote</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div className="bg-primary-blue/10 rounded-2xl p-6 border-2 border-primary-blue/20">
@@ -325,6 +356,15 @@ export default function Leistungen() {
           </div>
         </div>
       </section>
+
+      {/* Trust Elements Section */}
+      <TrustElements />
+
+      {/* Testimonials Section */}
+      <Testimonials />
+
+      {/* FAQ Section */}
+      <FAQ items={leistungenFAQ} title="Häufige Fragen zu den Leistungen" subtitle="Antworten auf Ihre Fragen zur Betreuung und Abrechnung" />
 
       <Footer />
     </div>

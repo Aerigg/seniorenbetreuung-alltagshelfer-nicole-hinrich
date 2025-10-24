@@ -9,6 +9,8 @@ import FadeIn from "@/components/animations/FadeIn";
 import Stagger from "@/components/animations/Stagger";
 import StaggerItem from "@/components/animations/StaggerItem";
 import { motion } from "framer-motion";
+import FAQ from "@/components/sections/FAQ";
+import { kontaktFAQ } from "@/data/faqData";
 
 export default function Kontakt() {
   return (
@@ -65,9 +67,19 @@ export default function Kontakt() {
               </p>
             </div>
 
+            {/* Verfügbarkeit */}
+            <motion.div
+              className="mb-8 p-4 bg-green-50 border-2 border-green-200 rounded-xl text-center"
+              whileHover={{ scale: 1.02 }}
+            >
+              <p className="text-green-800 font-medium">
+                ✓ Derzeit noch Kapazitäten frei – Sprechen Sie mich gerne an!
+              </p>
+            </motion.div>
+
             <Stagger staggerDelay={0.15} className="space-y-6 mb-12">
               {[
-                { icon: Phone, title: "Telefon", value: "0152 / 59229075", href: "tel:015259229075", subtitle: "Mo-Fr 8:00 - 18:00 Uhr" },
+                { icon: Phone, title: "Telefon (auch für dringende Anfragen)", value: "0152 / 59229075", href: "tel:015259229075", subtitle: "Mo-Fr 8:00 - 18:00 Uhr, außerhalb nach Absprache" },
                 { icon: Mail, title: "E-Mail", value: "Seniorenbetreuung.alltagshelfer@gmail.com", href: "mailto:Seniorenbetreuung.alltagshelfer@gmail.com", subtitle: "Antwort innerhalb von 24 Stunden" },
                 { icon: MapPin, title: "Standort", value: "Rostock, Deutschland", subtitle: "Hausbesuche im gesamten Stadtgebiet" }
               ].map((contact, idx) => (
@@ -182,6 +194,9 @@ export default function Kontakt() {
           </FadeIn>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <FAQ items={kontaktFAQ} title="Häufige Fragen zum Kontakt" subtitle="Schnelle Antworten auf Ihre Fragen" />
 
       <Footer />
     </div>

@@ -10,6 +10,11 @@ import ScaleIn from "@/components/animations/ScaleIn";
 import Stagger from "@/components/animations/Stagger";
 import StaggerItem from "@/components/animations/StaggerItem";
 import { motion } from "framer-motion";
+import Testimonials from "@/components/sections/Testimonials";
+import HowItWorks from "@/components/sections/HowItWorks";
+import TrustElements from "@/components/sections/TrustElements";
+import FAQ from "@/components/sections/FAQ";
+import { homepageFAQ } from "@/data/faqData";
 
 export default function Home() {
   return (
@@ -428,15 +433,29 @@ export default function Home() {
                 }}
               >
                 <h3 className="text-2xl font-semibold text-foreground mb-6">Kontaktdaten</h3>
+
+                {/* Verfügbarkeit */}
+                <motion.div
+                  className="mb-6 p-3 bg-green-50 border-2 border-green-200 rounded-xl"
+                  whileHover={{ scale: 1.02 }}
+                >
+                  <p className="text-green-800 font-medium text-sm">
+                    ✓ Derzeit noch Kapazitäten frei
+                  </p>
+                </motion.div>
+
                 <div className="space-y-4">
                   <motion.div whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
-                    <p className="text-foreground/70 text-sm mb-1">Telefon</p>
+                    <p className="text-foreground/70 text-sm mb-1">Telefon (auch für dringende Anfragen)</p>
                     <a
                       href="tel:015259229075"
                       className="text-lg font-medium text-primary-blue hover:text-primary-blue/80 transition-colors"
                     >
                       0152 / 59229075
                     </a>
+                    <p className="text-xs text-foreground/50 mt-1">
+                      Erreichbarkeit: Mo-Fr 8:00-18:00 Uhr, außerhalb nach Absprache
+                    </p>
                   </motion.div>
                   <motion.div whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
                     <p className="text-foreground/70 text-sm mb-1">E-Mail</p>
@@ -517,6 +536,18 @@ export default function Home() {
           </Stagger>
         </div>
       </section>
+
+      {/* Testimonials Section */}
+      <Testimonials />
+
+      {/* How It Works Section */}
+      <HowItWorks />
+
+      {/* Trust Elements Section */}
+      <TrustElements />
+
+      {/* FAQ Section */}
+      <FAQ items={homepageFAQ} />
 
       <Footer />
     </div>
