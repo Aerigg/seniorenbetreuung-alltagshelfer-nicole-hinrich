@@ -17,7 +17,7 @@ export default function Home() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center -mt-24 pt-24">
+      <section className="relative min-h-screen flex items-start md:items-center -mt-24 pt-24 md:pt-24">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -30,7 +30,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/30 to-transparent"></div>
         </div>
 
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-32 relative z-10">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-16 md:py-24 lg:py-32 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Text Content with Frosted Glass Effect */}
             <FadeIn direction="right" duration={0.8}>
