@@ -17,11 +17,23 @@ export default function Leistungen() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="py-16 sm:py-24 bg-gradient-to-br from-light-blue via-warm-beige to-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative py-32 sm:py-40 overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/general/hand-in-hand.jpg"
+            alt="Hand in Hand - Seniorenbetreuung"
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/60"></div>
+        </div>
+
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <FadeIn direction="up" duration={0.8} className="text-center max-w-3xl mx-auto">
             <motion.h1
-              className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6"
+              className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 drop-shadow-lg"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -29,7 +41,7 @@ export default function Leistungen() {
               Unsere Leistungen
             </motion.h1>
             <motion.p
-              className="text-xl text-foreground/70 leading-relaxed"
+              className="text-xl text-white/95 leading-relaxed drop-shadow"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
