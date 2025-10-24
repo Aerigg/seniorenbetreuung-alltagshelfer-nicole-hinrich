@@ -183,14 +183,12 @@ export default function Home() {
                 }}
               >
                 <div className="relative w-full h-48 overflow-hidden">
-                  <motion.div whileHover={{ scale: 1.1 }} transition={{ duration: 0.4 }}>
-                    <Image
-                      src="/services/seniorenbetreuung.jpg"
-                      alt="Seniorenbetreuung"
-                      fill
-                      className="object-cover"
-                    />
-                  </motion.div>
+                  <Image
+                    src="/services/seniorenbetreuung.jpg"
+                    alt="Seniorenbetreuung"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
                 <div className="p-8">
                   <div className="flex items-center gap-3 mb-4">
@@ -229,14 +227,12 @@ export default function Home() {
                 }}
               >
                 <div className="relative w-full h-48 overflow-hidden">
-                  <motion.div whileHover={{ scale: 1.1 }} transition={{ duration: 0.4 }}>
-                    <Image
-                      src="/services/hauswirtschaft.jpg"
-                      alt="Hauswirtschaft"
-                      fill
-                      className="object-cover"
-                    />
-                  </motion.div>
+                  <Image
+                    src="/services/hauswirtschaft.jpg"
+                    alt="Hauswirtschaft"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
                 <div className="p-8">
                   <div className="flex items-center gap-3 mb-4">
@@ -275,14 +271,12 @@ export default function Home() {
                 }}
               >
                 <div className="relative w-full h-48 overflow-hidden">
-                  <motion.div whileHover={{ scale: 1.1 }} transition={{ duration: 0.4 }}>
-                    <Image
-                      src="/services/kinderbetreuung.jpg"
-                      alt="Kinderbetreuung"
-                      fill
-                      className="object-cover"
-                    />
-                  </motion.div>
+                  <Image
+                    src="/services/kinderbetreuung.jpg"
+                    alt="Kinderbetreuung"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
                 <div className="p-8">
                   <div className="flex items-center gap-3 mb-4">
@@ -321,14 +315,12 @@ export default function Home() {
                 }}
               >
                 <div className="relative w-full h-48 overflow-hidden">
-                  <motion.div whileHover={{ scale: 1.1 }} transition={{ duration: 0.4 }}>
-                    <Image
-                      src="/services/pflegekasse.jpg"
-                      alt="Abrechnung über Pflegekasse"
-                      fill
-                      className="object-cover"
-                    />
-                  </motion.div>
+                  <Image
+                    src="/services/pflegekasse.jpg"
+                    alt="Abrechnung über Pflegekasse"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
                 <div className="p-8">
                   <div className="flex items-center gap-3 mb-4">

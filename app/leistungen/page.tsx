@@ -99,14 +99,12 @@ export default function Leistungen() {
               </div>
             </FadeIn>
             <ScaleIn delay={0.3} className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
-              <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.3 }}>
-                <Image
-                  src="/services/seniorenbetreuung.jpg"
-                  alt="Seniorenbetreuung"
-                  fill
-                  className="object-cover"
-                />
-              </motion.div>
+              <Image
+                src="/services/seniorenbetreuung.jpg"
+                alt="Seniorenbetreuung"
+                fill
+                className="object-cover"
+              />
             </ScaleIn>
           </div>
         </div>

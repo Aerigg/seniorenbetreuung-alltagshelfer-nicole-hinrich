@@ -3,8 +3,18 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
+  const pathname = usePathname();
+
+  const navLinks = [
+    { href: "/", label: "Startseite" },
+    { href: "/leistungen", label: "Leistungen" },
+    { href: "/ueber-mich", label: "Über mich" },
+    { href: "/kontakt", label: "Kontakt" },
+  ];
+
   return (
     <motion.header
       className="sticky top-0 z-50"
@@ -34,37 +44,34 @@ export default function Navbar() {
                   />
                 </motion.div>
                 <div className="hidden sm:block">
-                  <h2 className="text-foreground font-semibold text-lg drop-shadow-sm">Seniorenbetreuung</h2>
-                  <p className="text-warm-orange text-sm drop-shadow-sm font-medium">Alltagshelfer Nicole Hinrich</p>
+                  <h2 className="text-white font-semibold text-lg drop-shadow">Seniorenbetreuung</h2>
+                  <p className="text-warm-orange text-sm drop-shadow font-medium">Alltagshelfer Nicole Hinrich</p>
                 </div>
               </Link>
             </motion.div>
-            <nav className="hidden md:flex space-x-6 lg:space-x-8">
-              {[
-                { href: "/", label: "Startseite" },
-                { href: "/leistungen", label: "Leistungen" },
-                { href: "/ueber-mich", label: "Über mich" },
-                { href: "/kontakt", label: "Kontakt" },
-              ].map((link) => (
-                <motion.div
-                  key={link.href}
-                  whileHover={{ scale: 1.1, y: -2 }}
-                  whileTap={{ scale: 0.95 }}
-                  transition={{ duration: 0.2 }}
-                >
-                  <Link
-                    href={link.href}
-                    className="relative text-foreground/90 hover:text-primary-blue transition-colors font-semibold drop-shadow-sm group"
+            <nav className="hidden md:flex space-x-3 lg:space-x-4">
+              {navLinks.map((link) => {
+                const isActive = pathname === link.href;
+                return (
+                  <motion.div
+                    key={link.href}
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    transition={{ duration: 0.2 }}
                   >
-                    {link.label}
-                    <motion.span
-                      className="absolute left-0 -bottom-1 w-0 h-0.5 bg-warm-orange"
-                      whileHover={{ width: "100%" }}
-                      transition={{ duration: 0.3 }}
-                    />
-                  </Link>
-                </motion.div>
-              ))}
+                    <Link
+                      href={link.href}
+                      className={`px-4 py-2 rounded-full font-semibold text-white transition-all shadow-md hover:shadow-lg ${
+                        isActive
+                          ? "bg-warm-orange"
+                          : "bg-primary-blue hover:bg-primary-blue/90"
+                      }`}
+                    >
+                      {link.label}
+                    </Link>
+                  </motion.div>
+                );
+              })}
             </nav>
             <motion.div
               whileHover={{ scale: 1.05 }}
