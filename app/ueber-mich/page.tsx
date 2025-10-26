@@ -10,7 +10,6 @@ import ScaleIn from "@/components/animations/ScaleIn";
 import Stagger from "@/components/animations/Stagger";
 import StaggerItem from "@/components/animations/StaggerItem";
 import { motion } from "framer-motion";
-import Testimonials from "@/components/sections/Testimonials";
 import TrustElements from "@/components/sections/TrustElements";
 
 export default function UeberMich() {
@@ -167,9 +166,6 @@ export default function UeberMich() {
 
       {/* Trust Elements Section */}
       <TrustElements />
-
-      {/* Testimonials Section */}
-      <Testimonials />
 
       {/* CTA Section */}
       <section className="py-20 bg-white">

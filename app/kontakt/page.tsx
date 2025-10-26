@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import FadeIn from "@/components/animations/FadeIn";
@@ -79,7 +79,7 @@ export default function Kontakt() {
 
             <Stagger staggerDelay={0.15} className="space-y-6 mb-12">
               {[
-                { icon: Phone, title: "Telefon (auch für dringende Anfragen)", value: "0152 / 59229075", href: "tel:015259229075", subtitle: "Mo-Fr 8:00 - 18:00 Uhr, außerhalb nach Absprache" },
+                { icon: Phone, title: "Telefon (auch für dringende Anfragen)", value: "0152 / 59229075", href: "tel:015259229075", subtitle: "Mo-Fr 08:00 - 16:00 Uhr, außerhalb nach Absprache" },
                 { icon: Mail, title: "E-Mail", value: "Seniorenbetreuung.alltagshelfer@gmail.com", href: "mailto:Seniorenbetreuung.alltagshelfer@gmail.com", subtitle: "Antwort innerhalb von 24 Stunden" },
                 { icon: MapPin, title: "Standort", value: "Rostock, Deutschland", subtitle: "Hausbesuche im gesamten Stadtgebiet" }
               ].map((contact, idx) => (
@@ -114,6 +114,19 @@ export default function Kontakt() {
                       <p className="text-sm text-foreground/60 mt-1">
                         {contact.subtitle}
                       </p>
+                      {contact.href && contact.href.includes("tel:") && (
+                        <motion.a
+                          href="https://wa.me/4915259229075"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 mt-3 bg-[#25D366] hover:bg-[#20BA5A] text-white px-4 py-2 rounded-full font-medium text-sm shadow-md hover:shadow-lg transition-all"
+                          whileHover={{ scale: 1.05 }}
+                          whileTap={{ scale: 0.95 }}
+                        >
+                          <MessageCircle className="w-4 h-4" strokeWidth={2} />
+                          Jetzt per WhatsApp kontaktieren
+                        </motion.a>
+                      )}
                     </div>
                   </motion.div>
                 </StaggerItem>
@@ -135,7 +148,7 @@ export default function Kontakt() {
               </div>
               <div className="space-y-2">
                 {[
-                  { day: "Montag - Freitag", time: "8:00 - 18:00 Uhr" },
+                  { day: "Montag - Freitag", time: "08:00 - 16:00 Uhr" },
                   { day: "Samstag", time: "Nach Vereinbarung" },
                   { day: "Sonntag", time: "Nach Vereinbarung" }
                 ].map((hours, idx) => (

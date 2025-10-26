@@ -10,7 +10,6 @@ import ScaleIn from "@/components/animations/ScaleIn";
 import Stagger from "@/components/animations/Stagger";
 import StaggerItem from "@/components/animations/StaggerItem";
 import { motion } from "framer-motion";
-import Testimonials from "@/components/sections/Testimonials";
 import HowItWorks from "@/components/sections/HowItWorks";
 import TrustElements from "@/components/sections/TrustElements";
 import FAQ from "@/components/sections/FAQ";
@@ -454,7 +453,7 @@ export default function Home() {
                       0152 / 59229075
                     </a>
                     <p className="text-xs text-foreground/50 mt-1">
-                      Erreichbarkeit: Mo-Fr 8:00-18:00 Uhr, außerhalb nach Absprache
+                      Erreichbarkeit: Mo-Fr 08:00-16:00 Uhr, außerhalb nach Absprache
                     </p>
                   </motion.div>
                   <motion.div whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
@@ -500,7 +499,7 @@ export default function Home() {
                     transition={{ delay: 0.1 }}
                   >
                     <span className="text-foreground/70">Montag - Freitag</span>
-                    <span className="font-medium text-foreground">8:00 - 18:00 Uhr</span>
+                    <span className="font-medium text-foreground">08:00 - 16:00 Uhr</span>
                   </motion.div>
                   <motion.div
                     className="flex justify-between"
@@ -536,9 +535,6 @@ export default function Home() {
           </Stagger>
         </div>
       </section>
-
-      {/* Testimonials Section */}
-      <Testimonials />
 
       {/* How It Works Section */}
       <HowItWorks />

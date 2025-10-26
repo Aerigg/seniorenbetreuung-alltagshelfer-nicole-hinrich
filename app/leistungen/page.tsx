@@ -10,7 +10,6 @@ import ScaleIn from "@/components/animations/ScaleIn";
 import Stagger from "@/components/animations/Stagger";
 import StaggerItem from "@/components/animations/StaggerItem";
 import { motion } from "framer-motion";
-import Testimonials from "@/components/sections/Testimonials";
 import TrustElements from "@/components/sections/TrustElements";
 import FAQ from "@/components/sections/FAQ";
 import { leistungenFAQ } from "@/data/faqData";
@@ -359,9 +358,6 @@ export default function Leistungen() {
 
       {/* Trust Elements Section */}
       <TrustElements />
-
-      {/* Testimonials Section */}
-      <Testimonials />
 
       {/* FAQ Section */}
       <FAQ items={leistungenFAQ} title="Häufige Fragen zu den Leistungen" subtitle="Antworten auf Ihre Fragen zur Betreuung und Abrechnung" />
