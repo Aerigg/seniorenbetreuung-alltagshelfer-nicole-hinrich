@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { MessageCircle } from "lucide-react";
+import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 
 export default function WhatsAppFloatingButton() {
   const phoneNumber = "015259229075";
@@ -20,7 +20,7 @@ export default function WhatsAppFloatingButton() {
       whileTap={{ scale: 0.9 }}
       aria-label="WhatsApp kontaktieren"
     >
-      <MessageCircle className="w-8 h-8" strokeWidth={2} />
+      <WhatsAppIcon className="w-8 h-8" />
     </motion.a>
   );
 }

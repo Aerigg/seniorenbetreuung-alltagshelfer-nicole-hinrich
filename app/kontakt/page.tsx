@@ -2,7 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
+import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import FadeIn from "@/components/animations/FadeIn";
@@ -123,7 +124,7 @@ export default function Kontakt() {
                           whileHover={{ scale: 1.05 }}
                           whileTap={{ scale: 0.95 }}
                         >
-                          <MessageCircle className="w-4 h-4" strokeWidth={2} />
+                          <WhatsAppIcon className="w-4 h-4" />
                           Jetzt per WhatsApp kontaktieren
                         </motion.a>
                       )}
