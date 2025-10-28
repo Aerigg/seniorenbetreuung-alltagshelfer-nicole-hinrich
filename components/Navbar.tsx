@@ -29,10 +29,10 @@ export default function Navbar() {
         <div className="container mx-auto px-4 py-3">
           <Link href="/" className="flex items-center gap-3">
             <Image
-              src="/logo.png"
+              src="/logo-small.png"
               alt="Seniorenbetreuung Alltagshelfer Nicole Hinrich Logo"
-              width={48}
-              height={48}
+              width={256}
+              height={256}
               className="w-12 h-12"
             />
             <div>
@@ -65,10 +65,10 @@ export default function Navbar() {
                     transition={{ duration: 3, repeat: Infinity, repeatDelay: 5 }}
                   >
                     <Image
-                      src="/logo.png"
+                      src="/logo-small.png"
                       alt="Seniorenbetreuung Alltagshelfer Nicole Hinrich Logo"
-                      width={60}
-                      height={60}
+                      width={256}
+                      height={256}
                       className="w-12 h-12 sm:w-14 sm:h-14"
                     />
                   </motion.div>

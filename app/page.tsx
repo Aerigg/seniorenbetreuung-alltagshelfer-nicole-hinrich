@@ -148,10 +148,10 @@ export default function Home() {
                   transition={{ duration: 0.3 }}
                 >
                   <Image
-                    src="/logo.png"
+                    src="/PNG-w2458px-h2231px-q80.webp"
                     alt="Nicole Hinrich"
-                    width={400}
-                    height={400}
+                    width={2458}
+                    height={2231}
                     className="w-full h-auto drop-shadow-2xl"
                     priority
                   />
@@ -293,8 +293,8 @@ export default function Home() {
                     <h3 className="text-2xl font-semibold text-foreground">Kinderbetreuung</h3>
                   </div>
                   <p className="text-foreground/70 mb-4">
-                    Liebevolle und qualifizierte Betreuung für Kinder und Jugendliche.
-                    Mit pädagogischem Ansatz und viel Herz.
+                    Liebevolle Betreuung für Kinder und Jugendliche. Besonders
+                    für Familien mit Kindern, die Pflegestufen haben.
                   </p>
                   <motion.div whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
                     <Link
@@ -395,10 +395,10 @@ export default function Home() {
                   transition={{ duration: 0.3 }}
                 >
                   <Image
-                    src="/logo.png"
+                    src="/PNG-w2458px-h2231px-q80.webp"
                     alt="Nicole Hinrich"
-                    width={500}
-                    height={500}
+                    width={2458}
+                    height={2231}
                     className="w-full h-full object-cover"
                   />
                 </motion.div>

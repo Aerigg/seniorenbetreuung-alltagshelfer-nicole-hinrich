@@ -191,9 +191,9 @@ export default function Leistungen() {
                 </h2>
               </div>
               <p className="text-lg text-foreground/70 mb-6">
-                Liebevolle und qualifizierte Betreuung für Kinder und Jugendliche. Mit
-                pädagogischem Ansatz, viel Geduld und Kreativität bin ich für die kleinen
-                und großen Bedürfnisse Ihrer Kinder da.
+                Liebevolle Betreuung für Kinder und Jugendliche. Ich unterstütze Familien
+                im Alltag – besonders wenn Kinder eine Pflegestufe haben und die Eltern
+                Entlastung brauchen.
               </p>
               <h3 className="text-xl font-semibold text-foreground mb-4">
                 Meine Leistungen umfassen:
@@ -201,11 +201,11 @@ export default function Leistungen() {
               <ul className="space-y-3 mb-8">
                 {[
                   "Betreuung nach der Schule / Kita",
-                  "Hilfe bei Hausaufgaben",
-                  "Spielerische Förderung und Beschäftigung",
+                  "Gemeinsames Spielen und Vorlesen",
                   "Kreative Aktivitäten und Basteln",
+                  "Spaziergänge und Bewegung an der frischen Luft",
                   "Zubereitung kindgerechter Mahlzeiten",
-                  "Begleitung zu Freizeitaktivitäten",
+                  "Unterstützung für Eltern mit Kindern mit Pflegestufe",
                   "Flexible Betreuungszeiten nach Absprache"
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3">

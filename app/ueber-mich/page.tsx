@@ -89,10 +89,10 @@ export default function UeberMich() {
               <div className="absolute inset-0 bg-gradient-to-br from-warm-orange/20 to-primary-blue/20 rounded-3xl transform -rotate-6"></div>
               <div className="relative bg-white rounded-3xl shadow-xl overflow-hidden">
                 <Image
-                  src="/logo.png"
+                  src="/PNG-w2458px-h2231px-q80.webp"
                   alt="Nicole Hinrich"
-                  width={500}
-                  height={500}
+                  width={2458}
+                  height={2231}
                   className="w-full h-full object-cover"
                 />
               </div>
