@@ -84,6 +84,24 @@ export default function Datenschutz() {
                 3. Allgemeine Hinweise und Pflichtinformationen
               </h2>
 
+              <h3 className="text-xl font-semibold text-foreground mb-3 mt-6">Hinweis zur verantwortlichen Stelle</h3>
+              <p className="text-foreground/70 mb-4">
+                Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:
+              </p>
+              <p className="text-foreground/70 mb-4">
+                Nicole Hinrich<br />
+                Seniorenbetreuung Alltagshelfer<br />
+                Martin-Luther-King-Allee 13<br />
+                18147 Rostock<br />
+                <br />
+                Telefon: 0152 / 59229075<br />
+                E-Mail: Seniorenbetreuung.alltagshelfer@gmail.com
+              </p>
+              <p className="text-foreground/70 mb-4">
+                Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über
+                die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z.B. Namen, E-Mail-Adressen o. Ä.) entscheidet.
+              </p>
+
               <h3 className="text-xl font-semibold text-foreground mb-3 mt-6">Datenschutz</h3>
               <p className="text-foreground/70 mb-4">
                 Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre

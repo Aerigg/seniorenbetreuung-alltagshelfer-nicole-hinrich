@@ -19,8 +19,8 @@ export default function Impressum() {
               <p className="text-foreground/70">
                 Nicole Hinrich<br />
                 Seniorenbetreuung Alltagshelfer<br />
-                [Straße und Hausnummer]<br />
-                [PLZ] Rostock<br />
+                Martin-Luther-King-Allee 13<br />
+                18147 Rostock<br />
                 Deutschland
               </p>
             </div>
@@ -34,20 +34,13 @@ export default function Impressum() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-semibold text-foreground mb-4">Umsatzsteuer-ID</h2>
-              <p className="text-foreground/70">
-                Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br />
-                [USt-IdNr.]
-              </p>
-            </div>
-
-            <div>
               <h2 className="text-2xl font-semibold text-foreground mb-4">
                 Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
               </h2>
               <p className="text-foreground/70">
                 Nicole Hinrich<br />
-                [Adresse]
+                Martin-Luther-King-Allee 13<br />
+                18147 Rostock
               </p>
             </div>
 
