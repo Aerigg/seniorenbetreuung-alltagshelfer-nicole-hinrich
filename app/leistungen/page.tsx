@@ -267,12 +267,6 @@ export default function Leistungen() {
                   </li>
                 ))}
               </ul>
-              <div className="bg-light-blue rounded-xl p-6 mb-6">
-                <p className="text-sm text-foreground/70">
-                  <strong className="text-foreground">Hinweis:</strong> Die gewerbliche Reinigung wird
-                  als private Leistung abgerechnet und kann nicht über die Pflegekasse geltend gemacht werden.
-                </p>
-              </div>
               <Link
                 href="/kontakt"
                 className="inline-block bg-primary-blue hover:bg-primary-blue/90 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all"
