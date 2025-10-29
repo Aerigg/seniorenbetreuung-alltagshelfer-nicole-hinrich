@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Heart, Home as HomeIcon, Baby, ShieldCheck } from "lucide-react";
+import { Heart, Home as HomeIcon, Baby, ShieldCheck, Sparkles } from "lucide-react";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import FadeIn from "@/components/animations/FadeIn";
@@ -170,187 +170,240 @@ export default function Home() {
               Meine Leistungen im Detail
             </h2>
             <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
-              Von der liebevollen Seniorenbetreuung bis zur zuverlässigen Kinderbetreuung –
-              ich bin für Sie da
+              Von der liebevollen Seniorenbetreuung bis zur professionellen gewerblichen Reinigung –
+              individuelle Unterstützung für jeden Bedarf
             </p>
           </FadeIn>
 
-          <Stagger staggerDelay={0.2} className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <StaggerItem>
-              <motion.div
-                className="bg-soft-gray rounded-2xl overflow-hidden shadow-lg border-2 border-primary-blue/20 h-full"
-                whileHover={{
-                  scale: 1.03,
-                  borderColor: "rgba(59, 130, 246, 0.5)",
-                  boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
-                  transition: { duration: 0.3 },
-                }}
-              >
-                <div className="relative w-full h-48 overflow-hidden">
-                  <Image
-                    src="/services/seniorenbetreuung.jpg"
-                    alt="Seniorenbetreuung"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div className="p-8">
-                  <div className="flex items-center gap-3 mb-4">
-                    <motion.div
-                      animate={{ rotate: [0, 5, -5, 0] }}
-                      transition={{ duration: 2, repeat: Infinity, repeatDelay: 3 }}
-                    >
-                      <Heart className="w-8 h-8 text-warm-orange" strokeWidth={1.5} />
-                    </motion.div>
-                    <h3 className="text-2xl font-semibold text-foreground">Seniorenbetreuung</h3>
+          <Stagger staggerDelay={0.2} className="max-w-5xl mx-auto">
+            {/* Erste Reihe: Seniorenbetreuung und Hauswirtschaft */}
+            <div className="grid md:grid-cols-2 gap-8 mb-8">
+              <StaggerItem>
+                <motion.div
+                  className="bg-soft-gray rounded-2xl overflow-hidden shadow-lg border-2 border-primary-blue/20 h-full"
+                  whileHover={{
+                    scale: 1.03,
+                    borderColor: "rgba(59, 130, 246, 0.5)",
+                    boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+                    transition: { duration: 0.3 },
+                  }}
+                >
+                  <div className="relative w-full h-48 overflow-hidden">
+                    <Image
+                      src="/services/seniorenbetreuung.jpg"
+                      alt="Seniorenbetreuung"
+                      fill
+                      className="object-cover"
+                    />
                   </div>
-                  <p className="text-foreground/70 mb-4">
-                    Individuelle Betreuung und Begleitung im Alltag. Ich unterstütze bei alltäglichen
-                    Aufgaben und schaffe Momente der Freude.
-                  </p>
-                  <motion.div whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
-                    <Link
-                      href="/leistungen#seniorenbetreuung"
-                      className="text-primary-blue hover:text-primary-blue/80 font-medium inline-flex items-center gap-2"
-                    >
-                      Mehr erfahren →
-                    </Link>
-                  </motion.div>
-                </div>
-              </motion.div>
-            </StaggerItem>
+                  <div className="p-8">
+                    <div className="flex items-center gap-3 mb-4">
+                      <motion.div
+                        animate={{ rotate: [0, 5, -5, 0] }}
+                        transition={{ duration: 2, repeat: Infinity, repeatDelay: 3 }}
+                      >
+                        <Heart className="w-8 h-8 text-warm-orange" strokeWidth={1.5} />
+                      </motion.div>
+                      <h3 className="text-2xl font-semibold text-foreground">Seniorenbetreuung</h3>
+                    </div>
+                    <p className="text-foreground/70 mb-4">
+                      Individuelle Betreuung und Begleitung im Alltag. Ich unterstütze bei alltäglichen
+                      Aufgaben und schaffe Momente der Freude.
+                    </p>
+                    <motion.div whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
+                      <Link
+                        href="/leistungen#seniorenbetreuung"
+                        className="text-primary-blue hover:text-primary-blue/80 font-medium inline-flex items-center gap-2"
+                      >
+                        Mehr erfahren →
+                      </Link>
+                    </motion.div>
+                  </div>
+                </motion.div>
+              </StaggerItem>
 
-            <StaggerItem>
-              <motion.div
-                className="bg-soft-gray rounded-2xl overflow-hidden shadow-lg border-2 border-primary-blue/20 h-full"
-                whileHover={{
-                  scale: 1.03,
-                  borderColor: "rgba(59, 130, 246, 0.5)",
-                  boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
-                  transition: { duration: 0.3 },
-                }}
-              >
-                <div className="relative w-full h-48 overflow-hidden">
-                  <Image
-                    src="/services/hauswirtschaft.jpg"
-                    alt="Hauswirtschaft"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div className="p-8">
-                  <div className="flex items-center gap-3 mb-4">
-                    <motion.div
-                      animate={{ rotate: [0, 5, -5, 0] }}
-                      transition={{ duration: 2, repeat: Infinity, repeatDelay: 3, delay: 0.3 }}
-                    >
-                      <HomeIcon className="w-8 h-8 text-warm-orange" strokeWidth={1.5} />
-                    </motion.div>
-                    <h3 className="text-2xl font-semibold text-foreground">Hauswirtschaft</h3>
+              <StaggerItem>
+                <motion.div
+                  className="bg-soft-gray rounded-2xl overflow-hidden shadow-lg border-2 border-primary-blue/20 h-full"
+                  whileHover={{
+                    scale: 1.03,
+                    borderColor: "rgba(59, 130, 246, 0.5)",
+                    boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+                    transition: { duration: 0.3 },
+                  }}
+                >
+                  <div className="relative w-full h-48 overflow-hidden">
+                    <Image
+                      src="/services/hauswirtschaft.jpg"
+                      alt="Hauswirtschaft"
+                      fill
+                      className="object-cover"
+                    />
                   </div>
-                  <p className="text-foreground/70 mb-4">
-                    Professionelle Unterstützung im Haushalt – von der Reinigung bis zur
-                    Wäschepflege. Damit Sie sich auf das Wesentliche konzentrieren können.
-                  </p>
-                  <motion.div whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
-                    <Link
-                      href="/leistungen#hauswirtschaft"
-                      className="text-primary-blue hover:text-primary-blue/80 font-medium inline-flex items-center gap-2"
-                    >
-                      Mehr erfahren →
-                    </Link>
-                  </motion.div>
-                </div>
-              </motion.div>
-            </StaggerItem>
+                  <div className="p-8">
+                    <div className="flex items-center gap-3 mb-4">
+                      <motion.div
+                        animate={{ rotate: [0, 5, -5, 0] }}
+                        transition={{ duration: 2, repeat: Infinity, repeatDelay: 3, delay: 0.3 }}
+                      >
+                        <HomeIcon className="w-8 h-8 text-warm-orange" strokeWidth={1.5} />
+                      </motion.div>
+                      <h3 className="text-2xl font-semibold text-foreground">Hauswirtschaft</h3>
+                    </div>
+                    <p className="text-foreground/70 mb-4">
+                      Professionelle Unterstützung im Haushalt – von der Reinigung bis zur
+                      Wäschepflege. Damit Sie sich auf das Wesentliche konzentrieren können.
+                    </p>
+                    <motion.div whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
+                      <Link
+                        href="/leistungen#hauswirtschaft"
+                        className="text-primary-blue hover:text-primary-blue/80 font-medium inline-flex items-center gap-2"
+                      >
+                        Mehr erfahren →
+                      </Link>
+                    </motion.div>
+                  </div>
+                </motion.div>
+              </StaggerItem>
+            </div>
 
-            <StaggerItem>
-              <motion.div
-                className="bg-soft-gray rounded-2xl overflow-hidden shadow-lg border-2 border-primary-blue/20 h-full"
-                whileHover={{
-                  scale: 1.03,
-                  borderColor: "rgba(59, 130, 246, 0.5)",
-                  boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
-                  transition: { duration: 0.3 },
-                }}
-              >
-                <div className="relative w-full h-48 overflow-hidden">
-                  <Image
-                    src="/services/kinderbetreuung.jpg"
-                    alt="Kinderbetreuung"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div className="p-8">
-                  <div className="flex items-center gap-3 mb-4">
-                    <motion.div
-                      animate={{ rotate: [0, 5, -5, 0] }}
-                      transition={{ duration: 2, repeat: Infinity, repeatDelay: 3, delay: 0.6 }}
-                    >
-                      <Baby className="w-8 h-8 text-warm-orange" strokeWidth={1.5} />
-                    </motion.div>
-                    <h3 className="text-2xl font-semibold text-foreground">Kinderbetreuung</h3>
+            {/* Zweite Reihe: Kinderbetreuung und Gewerbliche Reinigung */}
+            <div className="grid md:grid-cols-2 gap-8 mb-8">
+              <StaggerItem>
+                <motion.div
+                  className="bg-soft-gray rounded-2xl overflow-hidden shadow-lg border-2 border-primary-blue/20 h-full"
+                  whileHover={{
+                    scale: 1.03,
+                    borderColor: "rgba(59, 130, 246, 0.5)",
+                    boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+                    transition: { duration: 0.3 },
+                  }}
+                >
+                  <div className="relative w-full h-48 overflow-hidden">
+                    <Image
+                      src="/services/kinderbetreuung.jpg"
+                      alt="Kinderbetreuung"
+                      fill
+                      className="object-cover"
+                    />
                   </div>
-                  <p className="text-foreground/70 mb-4">
-                    Liebevolle Betreuung für Kinder und Jugendliche. Besonders
-                    für Familien mit Kindern, die Pflegestufen haben.
-                  </p>
-                  <motion.div whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
-                    <Link
-                      href="/leistungen#kinderbetreuung"
-                      className="text-primary-blue hover:text-primary-blue/80 font-medium inline-flex items-center gap-2"
-                    >
-                      Mehr erfahren →
-                    </Link>
-                  </motion.div>
-                </div>
-              </motion.div>
-            </StaggerItem>
+                  <div className="p-8">
+                    <div className="flex items-center gap-3 mb-4">
+                      <motion.div
+                        animate={{ rotate: [0, 5, -5, 0] }}
+                        transition={{ duration: 2, repeat: Infinity, repeatDelay: 3, delay: 0.6 }}
+                      >
+                        <Baby className="w-8 h-8 text-warm-orange" strokeWidth={1.5} />
+                      </motion.div>
+                      <h3 className="text-2xl font-semibold text-foreground">Kinderbetreuung</h3>
+                    </div>
+                    <p className="text-foreground/70 mb-4">
+                      Liebevolle Betreuung für Kinder und Jugendliche. Besonders
+                      für Familien mit Kindern, die Pflegestufen haben.
+                    </p>
+                    <motion.div whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
+                      <Link
+                        href="/leistungen#kinderbetreuung"
+                        className="text-primary-blue hover:text-primary-blue/80 font-medium inline-flex items-center gap-2"
+                      >
+                        Mehr erfahren →
+                      </Link>
+                    </motion.div>
+                  </div>
+                </motion.div>
+              </StaggerItem>
 
-            <StaggerItem>
-              <motion.div
-                className="bg-soft-gray rounded-2xl overflow-hidden shadow-lg border-2 border-primary-blue/20 h-full"
-                whileHover={{
-                  scale: 1.03,
-                  borderColor: "rgba(59, 130, 246, 0.5)",
-                  boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
-                  transition: { duration: 0.3 },
-                }}
-              >
-                <div className="relative w-full h-48 overflow-hidden">
-                  <Image
-                    src="/services/pflegekasse.jpg"
-                    alt="Abrechnung über Pflegekasse"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div className="p-8">
-                  <div className="flex items-center gap-3 mb-4">
-                    <motion.div
-                      animate={{ rotate: [0, 5, -5, 0] }}
-                      transition={{ duration: 2, repeat: Infinity, repeatDelay: 3, delay: 0.9 }}
-                    >
-                      <ShieldCheck className="w-8 h-8 text-warm-orange" strokeWidth={1.5} />
-                    </motion.div>
-                    <h3 className="text-2xl font-semibold text-foreground">Abrechnung über Pflegekasse</h3>
+              <StaggerItem>
+                <motion.div
+                  className="bg-soft-gray rounded-2xl overflow-hidden shadow-lg border-2 border-primary-blue/20 h-full"
+                  whileHover={{
+                    scale: 1.03,
+                    borderColor: "rgba(59, 130, 246, 0.5)",
+                    boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+                    transition: { duration: 0.3 },
+                  }}
+                >
+                  <div className="relative w-full h-48 overflow-hidden">
+                    <Image
+                      src="/general/gewerbe-reinigung.jpg"
+                      alt="Gewerbliche Reinigung"
+                      fill
+                      className="object-cover"
+                    />
                   </div>
-                  <p className="text-foreground/70 mb-4">
-                    Als LAGuS-anerkannter Anbieter kann ich direkt mit den Pflegekassen abrechnen.
-                    Keine komplizierte Bürokratie für Sie.
-                  </p>
-                  <motion.div whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
-                    <Link
-                      href="/leistungen#pflegekasse"
-                      className="text-primary-blue hover:text-primary-blue/80 font-medium inline-flex items-center gap-2"
-                    >
-                      Mehr erfahren →
-                    </Link>
-                  </motion.div>
-                </div>
-              </motion.div>
-            </StaggerItem>
+                  <div className="p-8">
+                    <div className="flex items-center gap-3 mb-4">
+                      <motion.div
+                        animate={{ rotate: [0, 5, -5, 0] }}
+                        transition={{ duration: 2, repeat: Infinity, repeatDelay: 3, delay: 0.9 }}
+                      >
+                        <Sparkles className="w-8 h-8 text-warm-orange" strokeWidth={1.5} />
+                      </motion.div>
+                      <h3 className="text-2xl font-semibold text-foreground">Gewerbliche Reinigung</h3>
+                    </div>
+                    <p className="text-foreground/70 mb-4">
+                      Professionelle Reinigung für Unternehmen, Büros, Arztpraxen und Privathaushalte.
+                      Zuverlässig und gründlich.
+                    </p>
+                    <motion.div whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
+                      <Link
+                        href="/leistungen#gewerbliche-reinigung"
+                        className="text-primary-blue hover:text-primary-blue/80 font-medium inline-flex items-center gap-2"
+                      >
+                        Mehr erfahren →
+                      </Link>
+                    </motion.div>
+                  </div>
+                </motion.div>
+              </StaggerItem>
+            </div>
+
+            {/* Dritte Reihe: Abrechnung über Pflegekasse (mittig) */}
+            <div className="flex justify-center">
+              <StaggerItem className="w-full md:w-1/2">
+                <motion.div
+                  className="bg-soft-gray rounded-2xl overflow-hidden shadow-lg border-2 border-primary-blue/20 h-full"
+                  whileHover={{
+                    scale: 1.03,
+                    borderColor: "rgba(59, 130, 246, 0.5)",
+                    boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+                    transition: { duration: 0.3 },
+                  }}
+                >
+                  <div className="relative w-full h-48 overflow-hidden">
+                    <Image
+                      src="/services/pflegekasse.jpg"
+                      alt="Abrechnung über Pflegekasse"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="p-8">
+                    <div className="flex items-center gap-3 mb-4">
+                      <motion.div
+                        animate={{ rotate: [0, 5, -5, 0] }}
+                        transition={{ duration: 2, repeat: Infinity, repeatDelay: 3, delay: 1.2 }}
+                      >
+                        <ShieldCheck className="w-8 h-8 text-warm-orange" strokeWidth={1.5} />
+                      </motion.div>
+                      <h3 className="text-2xl font-semibold text-foreground">Abrechnung über Pflegekasse</h3>
+                    </div>
+                    <p className="text-foreground/70 mb-4">
+                      Als LAGuS-anerkannter Anbieter kann ich direkt mit den Pflegekassen abrechnen.
+                      Keine komplizierte Bürokratie für Sie.
+                    </p>
+                    <motion.div whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
+                      <Link
+                        href="/leistungen#pflegekasse"
+                        className="text-primary-blue hover:text-primary-blue/80 font-medium inline-flex items-center gap-2"
+                      >
+                        Mehr erfahren →
+                      </Link>
+                    </motion.div>
+                  </div>
+                </motion.div>
+              </StaggerItem>
+            </div>
           </Stagger>
         </div>
       </section>
