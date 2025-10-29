@@ -237,7 +237,15 @@ export default function Leistungen() {
       <section id="gewerbliche-reinigung" className="py-20 bg-soft-gray scroll-mt-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
+            <div className="order-2 lg:order-1 relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
+              <Image
+                src="/general/gewerbe-reinigung.jpg"
+                alt="Gewerbliche Reinigung"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="order-1 lg:order-2">
               <div className="flex items-center gap-3 mb-6">
                 <Sparkles className="w-10 h-10 text-warm-orange" strokeWidth={1.5} />
                 <h2 className="text-3xl sm:text-4xl font-bold text-foreground">
@@ -273,14 +281,6 @@ export default function Leistungen() {
               >
                 Jetzt Angebot anfragen
               </Link>
-            </div>
-            <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
-              <Image
-                src="/general/gewerbe-reinigung.jpg"
-                alt="Gewerbliche Reinigung"
-                fill
-                className="object-cover"
-              />
             </div>
           </div>
         </div>
