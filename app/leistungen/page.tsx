@@ -282,7 +282,7 @@ export default function Leistungen() {
             </div>
             <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
               <Image
-                src="/services/hauswirtschaft.jpg"
+                src="/general/gewerbe-reinigung.jpg"
                 alt="Gewerbliche Reinigung"
                 fill
                 className="object-cover"
