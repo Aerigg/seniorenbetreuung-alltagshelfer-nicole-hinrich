@@ -1,7 +1,7 @@
 export const homepageFAQ = [
   {
     question: "Wie funktioniert die Abrechnung über die Pflegekasse?",
-    answer: "Als LAGuS-anerkannte Alltagshelferin rechne ich direkt mit Ihrer Pflegekasse ab. Sie müssen nicht in Vorkasse gehen. Ab Pflegegrad 1 haben Sie Anspruch auf den Entlastungsbetrag von bis zu 125€ monatlich für anerkannte Entlastungsleistungen."
+    answer: "Als LAGuS-anerkannte Alltagshelferin rechne ich direkt mit Ihrer Pflegekasse ab. Sie müssen nicht in Vorkasse gehen. Ab Pflegegrad 1 haben Sie Anspruch auf den Entlastungsbetrag von bis zu 131€ monatlich für anerkannte Entlastungsleistungen."
   },
   {
     question: "Was bedeutet LAGuS-Anerkennung genau?",
@@ -9,7 +9,7 @@ export const homepageFAQ = [
   },
   {
     question: "Welche Pflegegrade werden unterstützt?",
-    answer: "Ich unterstütze alle Pflegegrade ab Pflegegrad 1. Der Entlastungsbetrag von 125€ monatlich steht bereits ab Pflegegrad 1 zur Verfügung."
+    answer: "Ich unterstütze alle Pflegegrade ab Pflegegrad 1. Der Entlastungsbetrag von 131€ monatlich steht bereits ab Pflegegrad 1 zur Verfügung."
   },
   {
     question: "Wie schnell können Sie starten?",
@@ -28,7 +28,7 @@ export const homepageFAQ = [
 export const leistungenFAQ = [
   {
     question: "Welche Leistungen werden von der Pflegekasse übernommen?",
-    answer: "Seniorenbetreuung und hauswirtschaftliche Tätigkeiten können über den Entlastungsbetrag (125€/Monat ab Pflegegrad 1) direkt mit der Pflegekasse abgerechnet werden. Kinderbetreuung wird privat abgerechnet."
+    answer: "Seniorenbetreuung und hauswirtschaftliche Tätigkeiten können über den Entlastungsbetrag (131€/Monat ab Pflegegrad 1) direkt mit der Pflegekasse abgerechnet werden. Kinderbetreuung wird privat abgerechnet."
   },
   {
     question: "Kann ich mehrere Leistungen kombinieren?",

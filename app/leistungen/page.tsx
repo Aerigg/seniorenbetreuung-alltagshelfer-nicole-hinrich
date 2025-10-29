@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Heart, Home as HomeIcon, Baby, ShieldCheck, Check } from "lucide-react";
+import { Heart, Home as HomeIcon, Baby, ShieldCheck, Check, Sparkles } from "lucide-react";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import FadeIn from "@/components/animations/FadeIn";
@@ -49,7 +49,7 @@ export default function Leistungen() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              Von der liebevollen Seniorenbetreuung bis zur zuverlässigen Kinderbetreuung –
+              Von der liebevollen Seniorenbetreuung bis zur professionellen gewerblichen Reinigung –
               individuelle Unterstützung für jeden Bedarf
             </motion.p>
           </FadeIn>
@@ -233,6 +233,65 @@ export default function Leistungen() {
         </div>
       </section>
 
+      {/* Gewerbliche Reinigung */}
+      <section id="gewerbliche-reinigung" className="py-20 bg-soft-gray scroll-mt-20">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="flex items-center gap-3 mb-6">
+                <Sparkles className="w-10 h-10 text-warm-orange" strokeWidth={1.5} />
+                <h2 className="text-3xl sm:text-4xl font-bold text-foreground">
+                  Gewerbliche Reinigung
+                </h2>
+              </div>
+              <p className="text-lg text-foreground/70 mb-6">
+                Professionelle Reinigungsdienstleistungen für Unternehmen, Privathaushalte,
+                Büros und Arztpraxen. Zuverlässig, gründlich und termingerecht.
+              </p>
+              <h3 className="text-xl font-semibold text-foreground mb-4">
+                Meine Leistungen umfassen:
+              </h3>
+              <ul className="space-y-3 mb-8">
+                {[
+                  "Büroreinigung und Unterhaltsreinigung",
+                  "Reinigung von Arztpraxen und medizinischen Einrichtungen",
+                  "Grundreinigung und Fensterreinigung",
+                  "Treppenhausreinigung",
+                  "Reinigung von Geschäftsräumen",
+                  "Individuelle Reinigungspläne nach Bedarf",
+                  "Flexible Terminvereinbarung"
+                ].map((item, idx) => (
+                  <li key={idx} className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-warm-orange flex-shrink-0 mt-1" strokeWidth={2} />
+                    <span className="text-foreground/70">{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <div className="bg-light-blue rounded-xl p-6 mb-6">
+                <p className="text-sm text-foreground/70">
+                  <strong className="text-foreground">Hinweis:</strong> Die gewerbliche Reinigung wird
+                  als private Leistung abgerechnet und kann nicht über die Pflegekasse geltend gemacht werden.
+                </p>
+              </div>
+              <Link
+                href="/kontakt"
+                className="inline-block bg-primary-blue hover:bg-primary-blue/90 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all"
+              >
+                Jetzt Angebot anfragen
+              </Link>
+            </div>
+            <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
+              <Image
+                src="/services/hauswirtschaft.jpg"
+                alt="Gewerbliche Reinigung"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Pflegekasse */}
       <section id="pflegekasse" className="py-20 bg-gradient-to-b from-warm-beige to-light-blue scroll-mt-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
@@ -264,7 +323,7 @@ export default function Leistungen() {
                 },
                 {
                   title: "Entlastungsbetrag nutzen",
-                  desc: "Bis zu 125€ monatlich für anerkannte Entlastungsleistungen (ab Pflegegrad 1). Nicht genutzte Beträge können Sie ansparen!"
+                  desc: "Bis zu 131€ monatlich für anerkannte Entlastungsleistungen (ab Pflegegrad 1). Nicht genutzte Beträge können Sie ansparen!"
                 },
                 {
                   title: "Keine Bürokratie für Sie",
