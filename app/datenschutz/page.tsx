@@ -65,23 +65,97 @@ export default function Datenschutz() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-semibold text-foreground mb-4">2. Hosting</h2>
+              <h2 className="text-2xl font-semibold text-foreground mb-4">2. Hosting und technische Dienstleister</h2>
+
+              <h3 className="text-xl font-semibold text-foreground mb-3 mt-6">Vercel Inc.</h3>
               <p className="text-foreground/70 mb-4">
-                Diese Website wird extern gehostet. Die personenbezogenen Daten, die auf dieser Website erfasst werden,
-                werden auf den Servern des Hosters / der Hoster gespeichert. Hierbei kann es sich v.a. um IP-Adressen,
-                Kontaktanfragen, Meta- und Kommunikationsdaten, Vertragsdaten, Kontaktdaten, Namen, Websitezugriffe
-                und sonstige Daten, die über eine Website generiert werden, handeln.
+                Diese Website wird auf Servern von Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, USA gehostet.
+                Vercel erfasst automatisch Informationen über die Nutzung der Website in Server-Logs. Dabei können
+                folgende Daten gespeichert werden:
+              </p>
+              <ul className="list-disc list-inside text-foreground/70 space-y-2 mb-4">
+                <li>IP-Adresse des anfragenden Rechners</li>
+                <li>Datum und Uhrzeit des Zugriffs</li>
+                <li>Aufgerufene Seiten und übertragene Datenmenge</li>
+                <li>Browser-Typ und Version</li>
+                <li>Betriebssystem</li>
+                <li>Referrer URL (zuvor besuchte Seite)</li>
+              </ul>
+              <p className="text-foreground/70 mb-4">
+                Diese Daten werden ausschließlich zur Sicherstellung eines stabilen und sicheren Betriebs der Website
+                sowie zur Optimierung unseres Internetangebots verwendet. Die Daten werden nicht mit anderen Datenquellen
+                zusammengeführt. Die Server-Logs werden nach 30 Tagen automatisch gelöscht.
+              </p>
+              <p className="text-foreground/70 mb-4">
+                Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der sicheren und effizienten
+                Bereitstellung unserer Website).
+              </p>
+              <p className="text-foreground/70 mb-4">
+                Vercel ist durch das EU-U.S. Data Privacy Framework zertifiziert, welches die Einhaltung des europäischen
+                Datenschutzniveaus sicherstellt.
               </p>
               <p className="text-foreground/70">
-                Das externe Hosting erfolgt zum Zwecke der Vertragserfüllung gegenüber unseren potenziellen und
-                bestehenden Kunden (Art. 6 Abs. 1 lit. b DSGVO) und im Interesse einer sicheren, schnellen und
-                effizienten Bereitstellung unseres Online-Angebots durch einen professionellen Anbieter (Art. 6 Abs. 1 lit. f DSGVO).
+                Weitere Informationen finden Sie in der Datenschutzerklärung von Vercel:
+                <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer"
+                   className="text-primary-blue hover:text-primary-blue/80 underline ml-1">
+                  https://vercel.com/legal/privacy-policy
+                </a>
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-2xl font-semibold text-foreground mb-4">3. Cookies</h2>
+
+              <h3 className="text-xl font-semibold text-foreground mb-3 mt-6">Was sind Cookies?</h3>
+              <p className="text-foreground/70 mb-4">
+                Cookies sind kleine Textdateien, die beim Besuch einer Website auf Ihrem Computer gespeichert werden.
+                Sie dienen dazu, die Funktionalität der Website zu gewährleisten und Ihr Nutzererlebnis zu verbessern.
+              </p>
+
+              <h3 className="text-xl font-semibold text-foreground mb-3 mt-6">Welche Cookies verwenden wir?</h3>
+              <p className="text-foreground/70 mb-4">
+                Diese Website verwendet ausschließlich technisch notwendige Cookies, die für den Betrieb der Website
+                erforderlich sind. Diese Cookies erfordern keine Einwilligung nach DSGVO.
+              </p>
+
+              <h4 className="text-lg font-medium text-foreground mb-2 mt-4">Technisch notwendige Cookies</h4>
+              <p className="text-foreground/70 mb-4">
+                Unsere Website nutzt folgende technisch notwendige Cookies:
+              </p>
+              <ul className="list-disc list-inside text-foreground/70 space-y-2 mb-4">
+                <li>
+                  <strong>Session-Cookies:</strong> Diese werden von Next.js (unserem Website-Framework) verwendet,
+                  um die grundlegende Funktionalität der Website sicherzustellen. Sie werden gelöscht, sobald Sie
+                  Ihren Browser schließen.
+                </li>
+                <li>
+                  <strong>Sicherheits-Cookies:</strong> Diese dienen dem Schutz vor Cross-Site-Request-Forgery (CSRF)
+                  Angriffen und gewährleisten die sichere Übertragung von Formulardaten.
+                </li>
+              </ul>
+              <p className="text-foreground/70 mb-4">
+                Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse am technischen Betrieb der Website).
+              </p>
+
+              <h3 className="text-xl font-semibold text-foreground mb-3 mt-6">Keine Tracking- oder Marketing-Cookies</h3>
+              <p className="text-foreground/70 mb-4">
+                Wir verwenden <strong>keine</strong> Tracking-, Analyse- oder Marketing-Cookies. Es erfolgt keine
+                Weitergabe Ihrer Daten an Dritte zu Werbezwecken. Wir nutzen kein Google Analytics, Facebook Pixel
+                oder vergleichbare Tracking-Dienste.
+              </p>
+
+              <h3 className="text-xl font-semibold text-foreground mb-3 mt-6">Cookies verwalten</h3>
+              <p className="text-foreground/70">
+                Sie können Ihren Browser so einstellen, dass Sie über das Setzen von Cookies informiert werden und
+                Cookies nur im Einzelfall erlauben oder die Annahme von Cookies generell ausschließen. Bitte beachten
+                Sie, dass bei Deaktivierung der technisch notwendigen Cookies die Funktionalität dieser Website
+                eingeschränkt sein kann.
               </p>
             </div>
 
             <div>
               <h2 className="text-2xl font-semibold text-foreground mb-4">
-                3. Allgemeine Hinweise und Pflichtinformationen
+                4. Allgemeine Hinweise und Pflichtinformationen
               </h2>
 
               <h3 className="text-xl font-semibold text-foreground mb-3 mt-6">Hinweis zur verantwortlichen Stelle</h3>
@@ -118,7 +192,7 @@ export default function Datenschutz() {
 
             <div>
               <h2 className="text-2xl font-semibold text-foreground mb-4">
-                4. Datenerfassung auf dieser Website
+                5. Datenerfassung auf dieser Website
               </h2>
 
               <h3 className="text-xl font-semibold text-foreground mb-3 mt-6">Kontaktformular</h3>
@@ -143,7 +217,7 @@ export default function Datenschutz() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-semibold text-foreground mb-4">5. Ihre Rechte</h2>
+              <h2 className="text-2xl font-semibold text-foreground mb-4">6. Ihre Rechte</h2>
               <p className="text-foreground/70 mb-4">
                 Sie haben jederzeit das Recht:
               </p>
@@ -161,7 +235,7 @@ export default function Datenschutz() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-semibold text-foreground mb-4">6. SSL- bzw. TLS-Verschlüsselung</h2>
+              <h2 className="text-2xl font-semibold text-foreground mb-4">7. SSL- bzw. TLS-Verschlüsselung</h2>
               <p className="text-foreground/70">
                 Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, wie zum
                 Beispiel Bestellungen oder Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL- bzw.
