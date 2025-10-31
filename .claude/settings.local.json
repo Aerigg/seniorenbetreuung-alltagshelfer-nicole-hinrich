@@ -14,7 +14,8 @@
       "Bash(git push:*)",
       "Bash(npm install:*)",
       "WebSearch",
-      "Read(//e/Cursor Projekte/**)"
+      "Read(//e/Cursor Projekte/**)",
+      "Bash(npm run build:*)"
     ],
     "deny": [],
     "ask": []
