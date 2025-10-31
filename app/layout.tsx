@@ -18,7 +18,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.seniorenbetreuung-alltagshelfer.de'),
+  metadataBase: new URL('https://www.seniorenbetreuung-alltagshelfer-nicole-hinrich.com'),
   title: {
     default: "Seniorenbetreuung & Alltagshelfer Nicole Hinrich | Rostock",
     template: "%s | Seniorenbetreuung Nicole Hinrich"
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "de_DE",
-    url: "https://www.seniorenbetreuung-alltagshelfer.de",
+    url: "https://www.seniorenbetreuung-alltagshelfer-nicole-hinrich.com",
     siteName: "Seniorenbetreuung & Alltagshelfer Nicole Hinrich",
     title: "Seniorenbetreuung & Alltagshelfer Nicole Hinrich | Rostock",
     description: "Herzliche und professionelle Seniorenbetreuung, Alltagshilfe und Kinderbetreuung in Rostock und Umgebung. Mit Anerkennung vom LAGuS zur direkten Abrechnung mit Pflegekassen.",

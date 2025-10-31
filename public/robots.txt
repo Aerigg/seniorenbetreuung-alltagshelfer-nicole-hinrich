@@ -1,5 +1,5 @@
 # Robots.txt für Seniorenbetreuung Alltagshelfer Rostock
-# https://www.seniorenbetreuung-alltagshelfer.de
+# https://www.seniorenbetreuung-alltagshelfer-nicole-hinrich.com
 
 User-agent: *
 Allow: /
@@ -10,4 +10,4 @@ Disallow: /admin/
 Disallow: /_next/
 
 # Sitemap
-Sitemap: https://www.seniorenbetreuung-alltagshelfer.de/sitemap.xml
+Sitemap: https://www.seniorenbetreuung-alltagshelfer-nicole-hinrich.com/sitemap.xml

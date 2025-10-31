@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Impressum | Seniorenbetreuung Nicole Hinrich',
     description: 'Impressum und rechtliche Informationen von Seniorenbetreuung & Alltagshelfer Nicole Hinrich.',
-    url: 'https://www.seniorenbetreuung-alltagshelfer.de/impressum',
+    url: 'https://www.seniorenbetreuung-alltagshelfer-nicole-hinrich.com/impressum',
   },
   robots: {
     index: false,

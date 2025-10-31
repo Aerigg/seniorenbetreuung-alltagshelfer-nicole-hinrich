@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Datenschutz | Seniorenbetreuung Nicole Hinrich',
     description: 'Datenschutzerklärung von Seniorenbetreuung & Alltagshelfer Nicole Hinrich.',
-    url: 'https://www.seniorenbetreuung-alltagshelfer.de/datenschutz',
+    url: 'https://www.seniorenbetreuung-alltagshelfer-nicole-hinrich.com/datenschutz',
   },
   robots: {
     index: false,

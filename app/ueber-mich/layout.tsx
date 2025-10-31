@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Über mich | Seniorenbetreuung Nicole Hinrich',
     description: 'Lernen Sie Nicole Hinrich kennen – Ihre LAGuS-anerkannte Alltagshelferin in Rostock.',
-    url: 'https://www.seniorenbetreuung-alltagshelfer.de/ueber-mich',
+    url: 'https://www.seniorenbetreuung-alltagshelfer-nicole-hinrich.com/ueber-mich',
   },
 }
 

@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://www.seniorenbetreuung-alltagshelfer.de'
+  const baseUrl = 'https://www.seniorenbetreuung-alltagshelfer-nicole-hinrich.com'
   const currentDate = new Date().toISOString()
 
   // Statische Routen mit individuellen Prioritäten

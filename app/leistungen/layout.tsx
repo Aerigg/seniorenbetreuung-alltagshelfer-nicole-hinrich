@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Unsere Leistungen | Seniorenbetreuung Nicole Hinrich',
     description: 'Entdecken Sie unser umfassendes Leistungsangebot: Seniorenbetreuung, Hauswirtschaftliche Hilfe, Kinderbetreuung und Gewerbliche Reinigung in Rostock.',
-    url: 'https://www.seniorenbetreuung-alltagshelfer.de/leistungen',
+    url: 'https://www.seniorenbetreuung-alltagshelfer-nicole-hinrich.com/leistungen',
   },
 }
 

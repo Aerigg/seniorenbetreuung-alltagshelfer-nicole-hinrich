@@ -5,10 +5,10 @@
       "has": [
         {
           "type": "host",
-          "value": "seniorenbetreuung-alltagshelfer.de"
+          "value": "seniorenbetreuung-alltagshelfer-nicole-hinrich.com"
         }
       ],
-      "destination": "https://www.seniorenbetreuung-alltagshelfer.de/:path*",
+      "destination": "https://www.seniorenbetreuung-alltagshelfer-nicole-hinrich.com/:path*",
       "permanent": true
     }
   ],

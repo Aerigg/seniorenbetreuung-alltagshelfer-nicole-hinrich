@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Kontakt | Seniorenbetreuung Nicole Hinrich',
     description: 'Kontaktieren Sie Nicole Hinrich für professionelle Seniorenbetreuung und Alltagshilfe in Rostock.',
-    url: 'https://www.seniorenbetreuung-alltagshelfer.de/kontakt',
+    url: 'https://www.seniorenbetreuung-alltagshelfer-nicole-hinrich.com/kontakt',
   },
 }
 

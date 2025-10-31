@@ -4,12 +4,12 @@ export default function StructuredData() {
     "@graph": [
       {
         "@type": "LocalBusiness",
-        "@id": "https://www.seniorenbetreuung-alltagshelfer.de/#organization",
+        "@id": "https://www.seniorenbetreuung-alltagshelfer-nicole-hinrich.com/#organization",
         "name": "Seniorenbetreuung & Alltagshelfer Nicole Hinrich",
         "alternateName": "Alltagshelfer Rostock",
-        "url": "https://www.seniorenbetreuung-alltagshelfer.de",
-        "logo": "https://www.seniorenbetreuung-alltagshelfer.de/logo.png",
-        "image": "https://www.seniorenbetreuung-alltagshelfer.de/logo.png",
+        "url": "https://www.seniorenbetreuung-alltagshelfer-nicole-hinrich.com",
+        "logo": "https://www.seniorenbetreuung-alltagshelfer-nicole-hinrich.com/logo.png",
+        "image": "https://www.seniorenbetreuung-alltagshelfer-nicole-hinrich.com/logo.png",
         "description": "Herzliche und professionelle Seniorenbetreuung, Alltagshilfe und Kinderbetreuung in Rostock und Umgebung. Mit Anerkennung vom LAGuS zur direkten Abrechnung mit Pflegekassen.",
         "telephone": "+49-152-59229075",
         "email": "Seniorenbetreuung.alltagshelfer@gmail.com",
@@ -48,21 +48,21 @@ export default function StructuredData() {
       },
       {
         "@type": "Person",
-        "@id": "https://www.seniorenbetreuung-alltagshelfer.de/#person",
+        "@id": "https://www.seniorenbetreuung-alltagshelfer-nicole-hinrich.com/#person",
         "name": "Nicole Hinrich",
         "jobTitle": "Alltagshelferin",
         "worksFor": {
-          "@id": "https://www.seniorenbetreuung-alltagshelfer.de/#organization"
+          "@id": "https://www.seniorenbetreuung-alltagshelfer-nicole-hinrich.com/#organization"
         },
         "telephone": "+49-152-59229075",
         "email": "Seniorenbetreuung.alltagshelfer@gmail.com"
       },
       {
         "@type": "Service",
-        "@id": "https://www.seniorenbetreuung-alltagshelfer.de/#service",
+        "@id": "https://www.seniorenbetreuung-alltagshelfer-nicole-hinrich.com/#service",
         "serviceType": "Seniorenbetreuung",
         "provider": {
-          "@id": "https://www.seniorenbetreuung-alltagshelfer.de/#organization"
+          "@id": "https://www.seniorenbetreuung-alltagshelfer-nicole-hinrich.com/#organization"
         },
         "areaServed": {
           "@type": "City",
@@ -109,25 +109,25 @@ export default function StructuredData() {
       },
       {
         "@type": "WebSite",
-        "@id": "https://www.seniorenbetreuung-alltagshelfer.de/#website",
-        "url": "https://www.seniorenbetreuung-alltagshelfer.de",
+        "@id": "https://www.seniorenbetreuung-alltagshelfer-nicole-hinrich.com/#website",
+        "url": "https://www.seniorenbetreuung-alltagshelfer-nicole-hinrich.com",
         "name": "Seniorenbetreuung & Alltagshelfer Nicole Hinrich",
         "description": "Herzliche und professionelle Seniorenbetreuung, Alltagshilfe und Kinderbetreuung in Rostock",
         "publisher": {
-          "@id": "https://www.seniorenbetreuung-alltagshelfer.de/#organization"
+          "@id": "https://www.seniorenbetreuung-alltagshelfer-nicole-hinrich.com/#organization"
         },
         "inLanguage": "de-DE"
       },
       {
         "@type": "WebPage",
-        "@id": "https://www.seniorenbetreuung-alltagshelfer.de/#webpage",
-        "url": "https://www.seniorenbetreuung-alltagshelfer.de",
+        "@id": "https://www.seniorenbetreuung-alltagshelfer-nicole-hinrich.com/#webpage",
+        "url": "https://www.seniorenbetreuung-alltagshelfer-nicole-hinrich.com",
         "name": "Seniorenbetreuung & Alltagshelfer Nicole Hinrich | Rostock",
         "isPartOf": {
-          "@id": "https://www.seniorenbetreuung-alltagshelfer.de/#website"
+          "@id": "https://www.seniorenbetreuung-alltagshelfer-nicole-hinrich.com/#website"
         },
         "about": {
-          "@id": "https://www.seniorenbetreuung-alltagshelfer.de/#organization"
+          "@id": "https://www.seniorenbetreuung-alltagshelfer-nicole-hinrich.com/#organization"
         },
         "description": "Herzliche und professionelle Seniorenbetreuung, Alltagshilfe und Kinderbetreuung in Rostock und Umgebung. Mit Anerkennung vom LAGuS zur direkten Abrechnung mit Pflegekassen.",
         "inLanguage": "de-DE"
