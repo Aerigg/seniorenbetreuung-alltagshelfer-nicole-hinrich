@@ -1,0 +1,13 @@
+# Robots.txt für Seniorenbetreuung Alltagshelfer Rostock
+# https://www.seniorenbetreuung-alltagshelfer.de
+
+User-agent: *
+Allow: /
+
+# Blockiere interne Bereiche falls vorhanden
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_next/
+
+# Sitemap
+Sitemap: https://www.seniorenbetreuung-alltagshelfer.de/sitemap.xml
