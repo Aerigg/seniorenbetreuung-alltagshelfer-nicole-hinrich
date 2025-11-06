@@ -24,6 +24,9 @@ export const metadata: Metadata = {
     template: "%s | Seniorenbetreuung Nicole Hinrich"
   },
   description: "Herzliche und professionelle Seniorenbetreuung, Alltagshilfe und Kinderbetreuung in Rostock und Umgebung. Mit Anerkennung vom LAGuS zur direkten Abrechnung mit Pflegekassen.",
+  alternates: {
+    canonical: 'https://www.seniorenbetreuung-alltagshelfer-nicole-hinrich.com',
+  },
   keywords: [
     "Seniorenbetreuung Rostock",
     "Alltagshelfer Rostock",

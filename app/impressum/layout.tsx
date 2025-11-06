@@ -3,6 +3,9 @@ import { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Impressum',
   description: 'Impressum und rechtliche Informationen von Seniorenbetreuung & Alltagshelfer Nicole Hinrich in Rostock.',
+  alternates: {
+    canonical: 'https://www.seniorenbetreuung-alltagshelfer-nicole-hinrich.com/impressum',
+  },
   openGraph: {
     title: 'Impressum | Seniorenbetreuung Nicole Hinrich',
     description: 'Impressum und rechtliche Informationen von Seniorenbetreuung & Alltagshelfer Nicole Hinrich.',

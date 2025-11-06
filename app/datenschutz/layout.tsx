@@ -3,6 +3,9 @@ import { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Datenschutz',
   description: 'Datenschutzerklärung von Seniorenbetreuung & Alltagshelfer Nicole Hinrich. Informationen zum Schutz Ihrer persönlichen Daten.',
+  alternates: {
+    canonical: 'https://www.seniorenbetreuung-alltagshelfer-nicole-hinrich.com/datenschutz',
+  },
   openGraph: {
     title: 'Datenschutz | Seniorenbetreuung Nicole Hinrich',
     description: 'Datenschutzerklärung von Seniorenbetreuung & Alltagshelfer Nicole Hinrich.',
