@@ -16,15 +16,16 @@ export default function StructuredData() {
         "email": "Seniorenbetreuung.alltagshelfer@gmail.com",
         "address": {
           "@type": "PostalAddress",
+          "streetAddress": "Martin-Luther-King-Allee 13",
           "addressLocality": "Rostock",
           "addressRegion": "Mecklenburg-Vorpommern",
-          "postalCode": "18055",
+          "postalCode": "18147",
           "addressCountry": "DE"
         },
         "geo": {
           "@type": "GeoCoordinates",
-          "latitude": 54.0924,
-          "longitude": 12.1286
+          "latitude": 54.1097,
+          "longitude": 12.1789
         },
         "areaServed": [
           {
