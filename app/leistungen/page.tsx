@@ -84,12 +84,11 @@ export default function Leistungen() {
                 <Stagger staggerDelay={0.1} className="space-y-3 mb-8">
                   {[
                     "Begleitung bei Spaziergängen und Ausflügen",
-                    "Unterstützung bei der Körperpflege",
                     "Hilfe bei der Nahrungsaufnahme",
                     "Gesellschaft und emotionale Unterstützung",
                     "Gedächtnistraining und aktivierende Beschäftigung",
                     "Begleitung zu Arztterminen",
-                    "Entlastung pflegender Angehöriger"
+                    "Entlastung für Angehörige"
                   ].map((item, idx) => (
                     <StaggerItem key={idx}>
                       <motion.li

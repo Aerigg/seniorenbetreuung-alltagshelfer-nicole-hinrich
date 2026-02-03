@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   keywords: [
     "Seniorenbetreuung Rostock",
     "Alltagshelfer Rostock",
-    "Pflegeunterstützung",
+    "Alltagsunterstützung",
     "Kinderbetreuung Rostock",
     "Hauswirtschaftliche Hilfe",
     "LAGuS anerkannt",
