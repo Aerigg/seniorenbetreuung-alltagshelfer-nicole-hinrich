@@ -148,7 +148,7 @@ export default function Home() {
                   transition={{ duration: 0.3 }}
                 >
                   <Image
-                    src="/PNG-w2458px-h2231px-q80.webp"
+                    src="/logo-nicole-hinrich-seniorenbetreuung.webp"
                     alt="Nicole Hinrich"
                     width={2458}
                     height={2231}
@@ -448,7 +448,7 @@ export default function Home() {
                   transition={{ duration: 0.3 }}
                 >
                   <Image
-                    src="/PNG-w2458px-h2231px-q80.webp"
+                    src="/logo-nicole-hinrich-seniorenbetreuung.webp"
                     alt="Nicole Hinrich"
                     width={2458}
                     height={2231}

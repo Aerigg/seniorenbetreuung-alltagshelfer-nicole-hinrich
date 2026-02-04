@@ -41,3 +41,6 @@ next-env.d.ts
 
 # bundler
 .turbo
+
+# Kundenordner (vertraulich)
+/10009 - Nicole Hinrich Pflege/

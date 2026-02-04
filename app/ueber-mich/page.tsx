@@ -89,7 +89,7 @@ export default function UeberMich() {
               <div className="absolute inset-0 bg-gradient-to-br from-warm-orange/20 to-primary-blue/20 rounded-3xl transform -rotate-6"></div>
               <div className="relative bg-white rounded-3xl shadow-xl overflow-hidden">
                 <Image
-                  src="/PNG-w2458px-h2231px-q80.webp"
+                  src="/logo-nicole-hinrich-seniorenbetreuung.webp"
                   alt="Nicole Hinrich"
                   width={2458}
                   height={2231}
