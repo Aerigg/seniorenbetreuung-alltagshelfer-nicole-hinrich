@@ -15,7 +15,7 @@ export default function Impressum() {
 
           <div className="bg-white rounded-2xl p-8 shadow-lg space-y-8">
             <div>
-              <h2 className="text-2xl font-semibold text-foreground mb-4">Angaben gemäß § 5 TMG</h2>
+              <h2 className="text-2xl font-semibold text-foreground mb-4">Angaben zum Anbieter</h2>
               <p className="text-foreground/70">
                 Nicole Hinrich<br />
                 Seniorenbetreuung Alltagshelfer<br />
@@ -35,31 +35,12 @@ export default function Impressum() {
 
             <div>
               <h2 className="text-2xl font-semibold text-foreground mb-4">
-                Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
+                Verantwortlich für den Inhalt
               </h2>
               <p className="text-foreground/70">
                 Nicole Hinrich<br />
                 Martin-Luther-King-Allee 13<br />
                 18147 Rostock
-              </p>
-            </div>
-
-            <div>
-              <h2 className="text-2xl font-semibold text-foreground mb-4">
-                EU-Streitschlichtung
-              </h2>
-              <p className="text-foreground/70">
-                Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:{" "}
-                <a
-                  href="https://ec.europa.eu/consumers/odr/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-primary-blue hover:text-primary-blue/80 underline"
-                >
-                  https://ec.europa.eu/consumers/odr/
-                </a>
-                <br />
-                Unsere E-Mail-Adresse finden Sie oben im Impressum.
               </p>
             </div>
 
@@ -76,8 +57,8 @@ export default function Impressum() {
             <div>
               <h2 className="text-2xl font-semibold text-foreground mb-4">Haftung für Inhalte</h2>
               <p className="text-foreground/70 mb-4">
-                Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den
-                allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht
+                Als Diensteanbieter sind wir gemäß § 7 Abs.1 DDG für eigene Inhalte auf diesen Seiten nach den
+                allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 DDG sind wir als Diensteanbieter jedoch nicht
                 verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen
                 zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
               </p>
